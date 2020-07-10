@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Página Web Desarrollada como segundo proyecto en la carrera de DESARROLLADOR WEB FULL STACK - ACAMICA">
+     <meta name="keywords" content="full stack ,developer web, desarrollo web,Acamica">
+     <meta name="autor" content="Andres Benavides - Dandavi2310@hotmail.com">
+     <meta name="copyright" content="Andres Benavides">
+     <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+     <script src=" https://kit.fontawesome.com/fa5c27ec11.js"></script>
+     <link rel="stylesheet" type="text/css" href="./styles/index.css">
+     <title>GifOs</title
+</head>
+
+<body class="Body-SailorDay" id="theme">
+     <header>
+          <div class="text-header">
+               <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+          </div>
+     </header>
+
+     <main>
+          <nav class="hero-gif">
+               <img src="./img/gifOF_logo.png" alt="logo" class="logo">
+
+               <div class="container-Buttons">
+
+                    <button class="create-Gifos btn" id="create-Gifos" onclick="createGifos()">
+                         Crear GifOs
+                    </button>
+
+                    <button class="btn select-Theme" onclick="openMenu()" onblur="closeMenu()" >
+                         Elegir Tema
+                    </button>
+
+                    <ul class="menu" id="menu">
+                         <li>
+                              <button class="sailor-Day btnlist" onclick="ChangeSailorDay()">
+                                   <span>S</span>ailor Day
+                              </button>
+                         </li>
+                         <li>
+                              <button class="sailor-Night btnlist" onclick="ChangeSailorNight()">
+                                   <span>S</span>ailor Night
+                              </button>
+                         </li>
+                    </ul>
+                     
+                    <button class="btn button-Menu" onclick="openMenu()" onblur="closeMenu()">
+                         <i class="fas fa-caret-down"></i>
+                    </button>
+
+                    <div class="my-Gifos">
+                         <a href="" class="My-Gifos">
+                              <span>M</span>is GiFos
+                         </a>
+                    </div>
+               </div>   
+          </nav>  
+          
+          <div class="section-Search">
+               <div class="container-Search">
+                    <div class="bar-Search">
+                         <p>Buscar</p>
+                    </div>
+
+                    <div class="container-Input">
+                         <input type="text" name="search" id="input-Search" class="input-Search" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+                         <button class="btn-Search" id="btn-Search" onclick="searchText()">
+                              <i class="fa fa-search" aria-hidden="true"></i>
+                              Buscar
+                         </button>
+                    </div>
+               </div>
+
+               <div class="suggestion-Search">
+
+                    <button class="suggestion-Btn" id="suggestion-Btn1" onclick="searchSuggestion()"># Resultado de búsqueda sugerido</button>
+
+                    <button class="suggestion-Btn" id="suggestion-Btn2" 
+                    onclick="searchSuggestion()"># Un resultado similar de búsqueda</button>
+
+                    <button class="suggestion-Btn" id="suggestion-Bt3" 
+                    onclick="searchSuggestion()"># Y otro más</button>
+
+               </div>
+
+               <div class="container-Gif">
+                    <div class="view-Gifs">
+                         <img class ="card-Gif" src="./img/gifOF_logo_dark.png" alt="gif1" onclick="openUrl(this)">
+                         <P>Message</P>
+                    </div>
+                    <div class="view-Gifs">
+                         <img class ="card-Gif" src="./img/gifOF_logo_dark.png" alt="gif2" onclick="openUrl(this)">
+                         <P>Message</P>
+                    </div>
+                    <div class="view-Gifs">
+                         <img class ="card-Gif" src="./img/gifOF_logo_dark.png" alt="gif3"
+                         onclick="openUrl(this)">
+                         <P>Message</P>
+                    </div>
+                    <div class="view-Gifs">
+                         <img class ="card-Gif" src="./img/gifOF_logo_dark.png" alt="gif4"
+                         onclick="openUrl(this)">
+                         <P>Message</P>
+                    </div>
+                    <div class="view-Gifs wide">
+                         <img class ="card-Gif" src="./img/gifOF_logo_dark.png" alt="gif5"
+                         onclick="openUrl(this)">
+                         <P>Message</P>
+                    </div>
+                    <div class="view-Gifs">
+                         <img class ="card-Gif" src="./img/gifOF_logo_dark.png" alt="gif6"
+                         onclick="openUrl(this)">
+                         <P>Message</P>
+                    </div>
+                    <div class="view-Gifs">
+                         <img class ="card-Gif" src="./img/gifOF_logo_dark.png" alt="gif7"
+                         onclick="openUrl(this)">
+                         <P>Message</P>
+                    </div>
+                    <div class="view-Gifs">
+                         <img class ="card-Gif" src="./img/gifOF_logo_dark.png" alt="gif8"
+                         onclick="openUrl(this)">
+                         <P>Message</P>
+                    </div>
+                    <div class="view-Gifs">
+                         <img class ="card-Gif" src="./img/gifOF_logo_dark.png" alt="gif9"
+                         onclick="openUrl(this)">
+                         <P>Message</P>
+                    </div>
+                    <div class="view-Gifs wide">
+                         <img class ="card-Gif" src="./img/gifOF_logo_dark.png" alt="gif10"
+                         onclick="openUrl(this)">
+                         <P>Message</P>
+                    </div>
+               </div>
+          </div>
+     </main>
+
+     <script src="./scripts/index.js"></script>
+</body>
+</html>
