@@ -1,94 +1,79 @@
-
-//-----Variables-----//
-const URL = 'https://api.giphy.com/v1/gifs/';
-const APY_KEY = 'api_key=P9hhr5BQGgN5rn5sa4pUU8CPGHpIabhm'
-
-//-----Function for open Menu-----//
-function openMenu() {
-     document.getElementById('menu').classList.toggle('view');
+let loadUrl = async(urlResponse) => {
+     try{ 
+          let response = await fetch(urlResponse);
+          let data = await response.json();
+          return data;        
+     }
+     catch(exeption){
+          console.log(exeption);
+          return exeption;
+     }    
 }
 
-//-----Function for Close Menu----//
-function closeMenu() {
-     document.getElementById('menu').classList.remove('view');
-}
+//----------------- search tags for suggestion-----------------------//
+HASTAG.forEach(async (suggest, index)=>{
 
+     let cardSuggestions = document.querySelectorAll('.card-Suggestion .gif-Suggestion');
+     let textSuggestion = document.querySelectorAll('.card-Suggestion .tittle-Suggestion p');
+     
+     let category = 'search';
+     let urlResponse = (`${URL}${category}?${APY_KEY}&q=${suggest}, { method: 'GET' }`); 
+     let dates = await loadUrl(urlResponse);
+     
+     cardSuggestions[index].setAttribute('src', `${dates.data[numImg].images.downsized_medium.url}`);
+     textSuggestion[index].innerHTML = `#${HASTAG[index]}`;
+})
 
-//----function listen events for search-----//
-const viewSearch = (e)=>{
-     let elements = document.querySelector('.suggestion-Search');
-     if(e.target.value){
-          elements.style.visibility = 'visible';
-     }
-     else{
-          elements.style.visibility = 'hidden';
-     }
-}
-
-//----Listen Events input-----///
-let inputSearch = document.getElementById('input-Search');
-inputSearch.addEventListener('input' , viewSearch);     
-
-
-//----change text input----//
-let searchTextInpunt = async(e) =>{
-     let textInput = e.target.value;
-     if(textInput){
-          try{
-               let category = 'search';
-               let response = await fetch(`${URL}${category}/tags?${APY_KEY}&q=${textInput.trim()}`, {method: 'GET'});
-               let data = await response.json();
-               console.log(data);
-               if(data.data.length>0){
-                    textSuggestion.children[0].innerHTML = data.data[0].name;
-                    textSuggestion.children[1].innerHTML = data.data[1].name;
-                    textSuggestion.children[2].innerHTML = data.data[2].name;
-               }     
-          }
-          catch{
-
-               console.log('Error al llamar a la Api')
-          }
-     }
-     else{
-          console.log('busqueda Vacía')
+//-----Function load trending-----//
+let loadTrends = async(urlTrending) => {
+     
+     cardTrends = document.querySelectorAll('.container-Gif .card-Gif')
+     
+     let dates = await loadUrl(urlTrending);
+     
+     let GifRandom = dates.data.sort(()=> Math.random()-0.6);
+     
+     for(let i = 0; i<cardTrends.length; i++){
+          cardTrends[i].setAttribute('src', `${dates.data[i].images.fixed_width.webp}`);
+          cardTrends[i].setAttribute('id', `ImgSearch_${i}`);
+          cardTrends[i].nextElementSibling.innerHTML = `<p># ${dates.data[i].title}</p>`;
      }
 } 
 
-inputSearch.addEventListener('input', searchTextInpunt);
-let textSuggestion = document.querySelector('.suggestion-Search');
-let childs = textSuggestion.children.length; 
+let category = 'trending';
+let urlResponse =(`${URL}${category}?${APY_KEY}&q=limit200, {method:'GET' }`);
+loadTrends(urlResponse);
 
-//-----Function search Text-----//
-let searchText = async() => { 
-     clonar();
-     let textForSearch = document.getElementById('input-Search');
-     cardSearchSuggest = document.querySelectorAll('.section-Search .container-Gif .card-Gif');  
+//_---- Function see More Suggestion ----//
+let seeMoreSuggestion = async(hasTag)=>{
+     let category = 'search';
+     let urlResponse =(`${URL}${category}?${APY_KEY}&q=${hasTag.substr(1)}, {method:'GET' }`);
+     loadTrends(urlResponse);
+     setTimeout(()=>{
+          location.href = `#section-Trends`;
+     }, 200)     
 
-     if(textForSearch.value.length > 0){
-          try{
-               let category = 'search';
-               let response = await fetch(`${URL}${category}?${APY_KEY}&q=${textForSearch.value} `, { method: 'GET' }); 
-               let data = await response.json();
-               console.log(data)
-              
-               for(let i = 0; i<cardSearchSuggest.length; i++){
-                    cardSearchSuggest[i].setAttribute('src', `${data.data[i].images.downsized_medium.url}`);
-               } 
-
-          }catch{
-               console.log('Error al llamar a la Api de busqueda')
-          }
-     }else{
-          alert('Debes Ingresar un texto para realizar la búsqueda')
-     }
-     
 }
 
-function clonar(){
-     if(!(document.querySelector('.section-Search .container-Gif'))){
-          let c = document.querySelector(".container-Gif");
-          let clon = c.cloneNode(true);
-          document.querySelector('.section-Search').appendChild(clon);   
-     }
+
+let changeSuggestion = async (element, suggest) =>{
+     console.log(element);
+     let c = (element.parentNode).parentNode;
+     console.log(c);
+     let clon = c.cloneNode(true);
+     suggest=clon.querySelector('.tittle-Suggestion p').innerHTML
+     cardChange = clon.querySelector('.gif-Suggestion')
+     console.log(cardChange);
+     console.log(suggest);
+     let category = 'search';
+     let urlResponse = (`${URL}${category}?${APY_KEY}&q=${suggest.substr(1)}, { method: 'GET' 
+     }`);
+     let dates = await loadUrl(urlResponse);
+     console.log(dates.data)
+     let  numI = Math.trunc(Math.random() * (24));
+     cardChange.setAttribute('src', `${dates.data[numI].images.downsized_medium.url}`);
+     console.log(`${dates.data[numI].images.downsized_medium.url}`)
+     console.log(cardChange);
+     document.querySelector('.card-Suggestion').remove(element);
+     document.querySelector('.suggestions').appendChild(clon);
 }

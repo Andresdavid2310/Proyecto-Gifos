@@ -1,3 +1,4 @@
+/* Import styles theme sailor day */
 * {
   margin: 0;
   padding: 0;
@@ -215,9 +216,11 @@ main {
 
 .Body-SailorDay .section-Search {
   margin-top: 5%;
+  overflow: hidden;
 }
 
 .Body-SailorDay .section-Search .container-Search {
+  width: 100%;
   background: #E6E6E6;
   -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
           box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
@@ -252,7 +255,7 @@ main {
   color: #B4B4B4;
   letter-spacing: 0;
   line-height: 22px;
-  width: 90%;
+  width: 80%;
   height: 2.5rem;
   padding-left: 0.5%;
 }
@@ -347,11 +350,11 @@ main {
 }
 
 .Body-SailorDay .container-Gif {
-  margin-top: 5%;
+  margin-top: 2%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (350px)[4];
-      grid-template-columns: repeat(4, 350px);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 320px;
   grid-gap: 1rem;
   -webkit-box-pack: center;
@@ -377,9 +380,42 @@ main {
 .Body-SailorDay .container-Gif .message {
   visibility: hidden;
   position: absolute;
+  bottom: 0.1px;
+  width: 100%;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  font-weight: bold;
+  height: 24px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  -webkit-box-shadow: 0 1px 0 0 #110038;
+          box-shadow: 0 1px 0 0 #110038;
+}
+
+.Body-SailorDay .container-Gif .message p {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.Body-SailorDay .container-Gif .view-Gifs:hover {
+  cursor: pointer;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  outline: 1px dotted #110038;
+}
+
+.Body-SailorDay .container-Gif .view-Gifs:hover .message {
+  visibility: visible;
 }
 
 .Body-SailorDay .container-Gif div {
+  width: 100%;
   font-size: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -394,10 +430,152 @@ main {
   background: #f5f5f5;
   -webkit-box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.5);
           box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.5);
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .Body-SailorDay .container-Gif div.wide {
   -ms-grid-column-span: 2;
       grid-column-end: span 2;
 }
+
+.Body-SailorDay .section-Suggestions, .Body-SailorDay .style-Section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 32px;
+  margin-top: 3%;
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+.Body-SailorDay .section-Suggestions p, .Body-SailorDay .style-Section p {
+  font-family: 'Chakra Petch', sans-serif;
+  margin-left: 1%;
+  text-align: left;
+  font-size: 14px;
+  color: #110038;
+  letter-spacing: 0;
+}
+
+.Body-SailorDay .container-Suggestions {
+  margin-top: 2%;
+  width: 100%;
+}
+
+.Body-SailorDay .container-Suggestions .suggestions {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 320px;
+      grid-template-rows: 320px;
+  grid-column-gap: 1em;
+}
+
+.Body-SailorDay .container-Suggestions .suggestions .card-Suggestion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 1px solid silver;
+  background: #f5f5f5;
+  -webkit-box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.5);
+  margin-right: 2%;
+}
+
+.Body-SailorDay .container-Suggestions .suggestions .card-Suggestion .tittle-Suggestion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+}
+
+.Body-SailorDay .container-Suggestions .suggestions .card-Suggestion .tittle-Suggestion p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 24px;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  font-weight: bold;
+  margin-left: 3%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Body-SailorDay .container-Suggestions .suggestions .card-Suggestion .gif-Suggestion {
+  width: 100%;
+  height: 94%;
+}
+
+.Body-SailorDay .container-Suggestions .suggestions .card-Suggestion .close-Sugges {
+  border: none;
+  width: 14px;
+  height: 16px;
+  margin-left: 90%;
+  position: absolute;
+}
+
+.Body-SailorDay .container-Suggestions .suggestions .card-Suggestion .close-Sugges:hover {
+  cursor: pointer;
+}
+
+.Body-SailorDay .container-Suggestions .suggestions .card-Suggestion .btn-See-More {
+  position: absolute;
+  margin: 19em 0 0 1em;
+  background: #4180F6;
+  border: 1px solid #4C2F99;
+  -webkit-box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+  width: 81px;
+  height: 34px;
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+}
+
+.Body-SailorDay .container-Suggestions .suggestions .card-Suggestion .btn-See-More:hover {
+  cursor: pointer;
+  border: 1px solid #110038;
+}
+
+.Body-SailorDay .container-Suggestions .suggestions .gif-Suggestion:hover {
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  outline: 1px dotted #110038;
+}
+
+/* Import styles theme sailor Nigth */
 /*# sourceMappingURL=index.css.map */
