@@ -16,3 +16,13 @@ let textSuggestion = document.querySelector('.suggestion-Search');
 //------Function load Suggestions-----------//
 const HASTAG = ['Goku' , 'The Walking Dead', 'Yoda' , 'Avengers'];
 let  numImg = Math.trunc(Math.random() * (24));
+
+
+//---- varables for theme page-----//
+let theme = document.getElementById('theme');
+let imgLogo = document.getElementById('logo');
+console.log(theme)
+console.log(imgLogo)
+
+
+     

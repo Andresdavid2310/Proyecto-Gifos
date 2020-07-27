@@ -13,10 +13,10 @@ const viewSearch = (e)=>{
 //----change text input----//
 let searchTextInpunt = async(e) =>{
      let textInput = e.target.value;
-     if(textInput){
-          
+     if(textInput){  
           let category = 'search';
           let urlResponse = (`${URL}${category}/tags?${APY_KEY}&q=${textInput.trim()}`);
+          console.log(urlResponse);
           
           let dates = await loadUrl(urlResponse);
           if(dates.data.length>0){
@@ -32,38 +32,26 @@ let searchTextInpunt = async(e) =>{
 
 //-----Function search Text-----//
 let searchText = async(text) => { 
-     clone();
-     let textForSearch = text
-     cardSearchSuggest = document.querySelectorAll('.section-Search .container-Gif .card-Gif');  
+     console.log(text);
+     let textForSearch = text;    
      if(textForSearch){   
-          
+          if(!(document.querySelector('.section-Search .result-Search'))){
+               createCard(10,'result-Search',document.querySelector('.section-Search'));
+          }
+          cardTrends = document.querySelectorAll('.section-Search .result-Search .card-Gif');
+          cardSearchSuggest = document.querySelectorAll('.section-Search .result-Search.card-Gif');  
+          console.log(cardTrends);
+     
           let category = 'search';
           let urlResponse =(`${URL}${category}?${APY_KEY}&q=${textForSearch} , {method:'GET' }`); 
           console.log(urlResponse);
-          let dates = await loadUrl(urlResponse);
-          console.log(dates)
-          
-          for(let i = 0; i<cardSearchSuggest.length; i++){
-               cardSearchSuggest[i].setAttribute('src', `${dates.data[i].images.downsized_medium.url}`);
-               cardSearchSuggest[i].setAttribute('id', `ImgSearch_${i}`);
-               cardSearchSuggest[i].nextElementSibling.innerHTML = `<p># ${dates.data[i].xtitle}</p>`;
-          } 
+          loadTrends(urlResponse,cardTrends);
 
      }else{
           alert('Debes Ingresar un texto para realizar la búsqueda')
      }
      document.querySelector('.suggestion-Search').style.visibility = 'hidden';
-     document.getElementById('input-Search').value = textForSearch;
-}
-
-
-//-----Function Clone------///
-function clone(){
-     if(!(document.querySelector('.section-Search .container-Gif'))){
-          let c = document.querySelector(".container-Gif");
-          let clon = c.cloneNode(true);
-          document.querySelector('.section-Search').appendChild(clon);   
-     }
+     document.getElementById('input-Search').value = '';
 }
 
 //-----Function Active Botton----//
@@ -85,4 +73,3 @@ const activeInput = () =>{
           inputSearch.classList.remove('input-Search-active');
      }    
 }
-

@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   font-size: 16px;
   outline: none;
 }
@@ -12,17 +12,7 @@ main {
   padding: 0.5%;
 }
 
-.Body-SailorDay {
-  background: #fff4fd 50%;
-}
-
-.Body-SailorDay header,
-.Body-SailorDay .bar-Search,
-.Body-SailorDay .text-header {
-  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
-  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
-  -webkit-box-shadow: 0 1px 0 0 #110038;
-          box-shadow: 0 1px 0 0 #110038;
+.text-header, .bar-Search {
   height: 30px;
   width: 100%;
   display: -webkit-box;
@@ -31,31 +21,29 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Chakra Petch', sans-serif;
 }
 
-.Body-SailorDay header p,
-.Body-SailorDay .bar-Search p,
-.Body-SailorDay .text-header p {
+.text-header p, .bar-Search p {
   margin-left: 1%;
-  font-size: 12px;
-  color: #FFFFFF;
-  letter-spacing: 0;
   width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Chakra Petch', sans-serif;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  font-family: "Chakra Petch", sans-serif;
 }
 
-.Body-SailorDay .logo {
+.logo {
   cursor: pointer;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.Body-SailorDay .hero-gif {
+.hero-gif {
+  font-family: "Chakra Petch", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,32 +53,23 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Chakra Petch', sans-serif;
 }
 
-.Body-SailorDay .hero-gif .my-Gifos {
+.hero-gif .my-Gifos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-decoration: none;
   -ms-flex-line-pack: center;
       align-content: center;
 }
 
-.Body-SailorDay .hero-gif .my-Gifos a {
+.hero-gif .my-Gifos a {
   padding: 3px;
   width: 85px;
   height: 30px;
-  font-family: 'Chakra Petch', sans-serif;
-  font-size: 16px;
-  color: #110038;
-  letter-spacing: 0;
-  line-height: 18px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,12 +81,12 @@ main {
           justify-content: center;
 }
 
-.Body-SailorDay .hero-gif .my-Gifos a:hover {
+.hero-gif .my-Gifos a:hover {
   border: 1px dotted #110038;
-  height: 34px;
+  height: 27px;
 }
 
-.Body-SailorDay .hero-gif .my-Gifos a:active {
+.hero-gif .my-Gifos a:active {
   border: none;
   font-size: 16px;
   color: #B4B4B4;
@@ -115,25 +94,7 @@ main {
   line-height: 18px;
 }
 
-.Body-SailorDay .hero-gif .btn {
-  font-family: 'Chakra Petch', sans-serif;
-  background: #F7C9F3;
-  border: 1px solid #110038;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-}
-
-.Body-SailorDay .hero-gif .btn:hover {
-  font-family: 'Chakra Petch', sans-serif;
-  background: #E6BBE2;
-  border: 1px solid #110038;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-  outline: 1px dotted #110038;
-}
-
-.Body-SailorDay .hero-gif .container-Buttons {
-  font-family: 'Chakra Petch', sans-serif;
+.hero-gif .container-Buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -145,28 +106,23 @@ main {
   text-align: center;
 }
 
-.Body-SailorDay .hero-gif .container-Buttons .create-Gifos {
+.hero-gif .container-Buttons .create-Gifos {
   width: 144px;
   height: 36px;
   margin-right: 5%;
 }
 
-.Body-SailorDay .hero-gif .container-Buttons .select-Theme {
+.hero-gif .container-Buttons .select-Theme {
   width: 144px;
   height: 36px;
 }
 
-.Body-SailorDay .hero-gif .container-Buttons .button-Menu {
+.hero-gif .container-Buttons .button-Menu {
   width: 36px;
   height: 36px;
 }
 
-.Body-SailorDay .hero-gif .container-Buttons .menu {
-  font-family: 'Chakra Petch', sans-serif;
-  list-style: none;
-  background: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+.hero-gif .container-Buttons .menu {
   width: 172px;
   height: 102px;
   position: absolute;
@@ -184,55 +140,32 @@ main {
           flex-direction: column;
   -webkit-transform: translate(88%, 35%);
           transform: translate(88%, 35%);
+  list-style: none;
 }
 
-.Body-SailorDay .hero-gif .container-Buttons .btnlist {
+.hero-gif .container-Buttons .btnlist {
   width: 150px;
   height: 36px;
 }
 
-.Body-SailorDay .hero-gif .container-Buttons .Sailor-Day {
-  background: #FFF4FD;
-  border: 1px solid #CCA6C9;
-  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
-}
-
-.Body-SailorDay .hero-gif .container-Buttons .view {
+.hero-gif .container-Buttons .view {
   -webkit-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
   opacity: 1;
   visibility: visible;
 }
 
-.Body-SailorDay .hero-gif .my-Gifos {
-  background: none;
-  border: none;
-}
-
-.Body-SailorDay .hero-gif span {
-  text-decoration: underline;
-}
-
-.Body-SailorDay .section-Search {
+.section-Search {
   margin-top: 5%;
   overflow: hidden;
 }
 
-.Body-SailorDay .section-Search .container-Search {
+.section-Search .container-Search {
   width: 100%;
-  background: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
   height: 7.5em;
 }
 
-.Body-SailorDay .section-Search .container-Search .bar-Search {
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
-}
-
-.Body-SailorDay .section-Search .container-Search p {
+.section-Search .container-Search p {
   margin: 0.2% 0 0.2% 0.5%;
   font-size: 14px;
   color: #FFFFFF;
@@ -246,77 +179,39 @@ main {
           align-items: center;
 }
 
-.Body-SailorDay .section-Search .container-Search .container-Input {
+.section-Search .container-Search .container-Input {
   margin: 1.5% 1% 1% 1%;
 }
 
-.Body-SailorDay .section-Search .container-Search .container-Input .input-Search {
-  font-size: 16px;
-  color: #B4B4B4;
-  letter-spacing: 0;
-  line-height: 22px;
+.section-Search .container-Search .container-Input .input-Search {
   width: 80%;
   height: 2.5rem;
   padding-left: 0.5%;
-}
-
-.Body-SailorDay .section-Search .container-Search .container-Input .input-Search-active {
-  font-family: 'Chakra Petch', sans-serif;
   font-size: 16px;
-  color: #110038;
-  letter-spacing: 0;
   line-height: 22px;
-  background: #FFFFFF;
-  border: 1px solid #979797;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
-          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  letter-spacing: 0;
 }
 
-.Body-SailorDay .section-Search .container-Search .container-Input .btn-Search {
+.section-Search .container-Search .container-Input .btn-Search {
   margin-left: 1%;
   height: 36px;
   width: 6rem;
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   font-size: 16px;
-  color: #8F8F8F;
   letter-spacing: 0;
   line-height: 18px;
-  background: #E6E6E6;
-  border: 1px solid #808080;
-  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
 }
 
-.Body-SailorDay .section-Search .container-Search .container-Input .btn-Search:active {
-  background: #F7C9F3;
-  border: 1px solid #110038;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-  color: #110038;
-  border: 1.5px dotted #110038;
-}
-
-.Body-SailorDay .section-Search .container-Search .container-Input .btn-Search:hover {
+.section-Search .container-Search .container-Input .btn-Search:hover {
   cursor: pointer;
 }
 
-.Body-SailorDay .section-Search .container-Search .container-Input .btn-search-active {
-  background: #F7C9F3;
-  border: 1px solid #110038;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-  color: #110038;
-  border: 1.5px dotted #110038;
-}
-
-.Body-SailorDay .section-Search .suggestion-Search {
+.section-Search .suggestion-Search {
   visibility: hidden;
   position: absolute;
   width: 86%;
   height: 160px;
-  background: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -326,30 +221,20 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  z-index: 3;
 }
 
-.Body-SailorDay .section-Search .suggestion-Search .suggestion-Btn {
+.section-Search .suggestion-Search .suggestion-Btn {
+  padding-left: 6px;
   width: 86.5%;
   height: 34px;
   margin-left: 1%;
   text-align: left;
   font-size: 16px;
-  color: #110038;
   letter-spacing: 0;
   line-height: 22px;
-  padding-left: 6px;
 }
 
-.Body-SailorDay .section-Search .suggestion-Search button:hover {
-  border: 1px dotted #110038;
-}
-
-.Body-SailorDay .section-Search .suggestion-Search button:active {
-  border: 1px dotted #110038;
-}
-
-.Body-SailorDay .container-Gif {
+.container-Gif, .result-Search {
   margin-top: 2%;
   display: -ms-grid;
   display: grid;
@@ -363,7 +248,7 @@ main {
   min-height: 100vh;
 }
 
-.Body-SailorDay .container-Gif .view-Gifs {
+.container-Gif .view-Gifs, .result-Search .view-Gifs {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -372,28 +257,24 @@ main {
   position: relative;
 }
 
-.Body-SailorDay .container-Gif img {
+.container-Gif img, .result-Search img {
   width: 100%;
   height: 100%;
 }
 
-.Body-SailorDay .container-Gif .message {
+.container-Gif .message, .result-Search .message {
   visibility: hidden;
   position: absolute;
   bottom: 0.1px;
   width: 100%;
   font-size: 14px;
+  height: 24px;
+  font-weight: bold;
   color: #FFFFFF;
   letter-spacing: 0;
-  font-weight: bold;
-  height: 24px;
-  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
-  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
-  -webkit-box-shadow: 0 1px 0 0 #110038;
-          box-shadow: 0 1px 0 0 #110038;
 }
 
-.Body-SailorDay .container-Gif .message p {
+.container-Gif .message p, .result-Search .message p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -402,7 +283,7 @@ main {
   text-overflow: ellipsis;
 }
 
-.Body-SailorDay .container-Gif .view-Gifs:hover {
+.container-Gif .view-Gifs:hover, .result-Search .view-Gifs:hover {
   cursor: pointer;
   border: 1px solid #110038;
   -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
@@ -410,11 +291,11 @@ main {
   outline: 1px dotted #110038;
 }
 
-.Body-SailorDay .container-Gif .view-Gifs:hover .message {
+.container-Gif .view-Gifs:hover .message, .result-Search .view-Gifs:hover .message {
   visibility: visible;
 }
 
-.Body-SailorDay .container-Gif div {
+.container-Gif div, .result-Search div {
   width: 100%;
   font-size: 100px;
   display: -webkit-box;
@@ -434,12 +315,12 @@ main {
           box-sizing: content-box;
 }
 
-.Body-SailorDay .container-Gif div.wide {
+.container-Gif div.wide, .result-Search div.wide {
   -ms-grid-column-span: 2;
       grid-column-end: span 2;
 }
 
-.Body-SailorDay .section-Suggestions, .Body-SailorDay .style-Section {
+.section-Suggestions, .style-Section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -448,28 +329,20 @@ main {
           align-items: center;
   height: 32px;
   margin-top: 3%;
-  background: #FFFAFE;
-  border: 1px solid #E6BBE2;
-  -webkit-box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
-          box-shadow: inset -2px -2px 0 0 #E6DCE4, inset 2px 2px 0 0 #80687D;
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: "Chakra Petch", sans-serif;
 }
 
-.Body-SailorDay .section-Suggestions p, .Body-SailorDay .style-Section p {
-  font-family: 'Chakra Petch', sans-serif;
+.section-Suggestions p, .style-Section p {
+  font-family: "Chakra Petch", sans-serif;
   margin-left: 1%;
   text-align: left;
   font-size: 14px;
-  color: #110038;
   letter-spacing: 0;
+  color: #110038;
 }
 
-.Body-SailorDay .container-Suggestions {
+.suggestions {
   margin-top: 2%;
-  width: 100%;
-}
-
-.Body-SailorDay .container-Suggestions .suggestions {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -479,7 +352,7 @@ main {
   grid-column-gap: 1em;
 }
 
-.Body-SailorDay .container-Suggestions .suggestions .card-Suggestion {
+.suggestions .card-Suggestion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,14 +364,10 @@ main {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border: 1px solid silver;
-  background: #f5f5f5;
-  -webkit-box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.5);
-          box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.5);
   margin-right: 2%;
 }
 
-.Body-SailorDay .container-Suggestions .suggestions .card-Suggestion .tittle-Suggestion {
+.suggestions .card-Suggestion .tittle-Suggestion {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -510,13 +379,9 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
-  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
-  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
 }
 
-.Body-SailorDay .container-Suggestions .suggestions .card-Suggestion .tittle-Suggestion p {
+.suggestions .card-Suggestion .tittle-Suggestion p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -531,12 +396,12 @@ main {
           align-items: center;
 }
 
-.Body-SailorDay .container-Suggestions .suggestions .card-Suggestion .gif-Suggestion {
+.suggestions .card-Suggestion .gif-Suggestion {
   width: 100%;
   height: 94%;
 }
 
-.Body-SailorDay .container-Suggestions .suggestions .card-Suggestion .close-Sugges {
+.suggestions .card-Suggestion .close-Sugges {
   border: none;
   width: 14px;
   height: 16px;
@@ -544,20 +409,16 @@ main {
   position: absolute;
 }
 
-.Body-SailorDay .container-Suggestions .suggestions .card-Suggestion .close-Sugges:hover {
+.suggestions .card-Suggestion .close-Sugges:hover {
   cursor: pointer;
 }
 
-.Body-SailorDay .container-Suggestions .suggestions .card-Suggestion .btn-See-More {
+.suggestions .card-Suggestion .btn-See-More {
   position: absolute;
   margin: 19em 0 0 1em;
-  background: #4180F6;
-  border: 1px solid #4C2F99;
-  -webkit-box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
   width: 81px;
   height: 34px;
-  font-family: 'Chakra Petch', sans-serif;
+  font-family: "Chakra Petch", sans-serif;
   font-size: 14px;
   color: #FFFFFF;
   letter-spacing: 0;
@@ -565,12 +426,182 @@ main {
   line-height: 18px;
 }
 
-.Body-SailorDay .container-Suggestions .suggestions .card-Suggestion .btn-See-More:hover {
+.Body-SailorDay {
+  background: #fff4fd 50%;
+}
+
+.Body-SailorDay header,
+.Body-SailorDay .bar-Search,
+.Body-SailorDay .text-header {
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  -webkit-box-shadow: 0 1px 0 0 #110038;
+          box-shadow: 0 1px 0 0 #110038;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.Body-SailorDay .hero-gif .my-Gifos {
+  text-decoration: none;
+}
+
+.Body-SailorDay .hero-gif .my-Gifos a {
+  text-decoration: none;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.Body-SailorDay .hero-gif .btn:hover {
+  font-family: "Chakra Petch", sans-serif;
+  background: #E6BBE2;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  outline: 1px dotted #110038;
+}
+
+.Body-SailorDay .hero-gif .btn {
+  font-family: "Chakra Petch", sans-serif;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.Body-SailorDay .hero-gif .container-Buttons {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.Body-SailorDay .hero-gif .container-Buttons .menu {
+  font-family: "Chakra Petch", sans-serif;
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.Body-SailorDay .hero-gif .container-Buttons .Sailor-Day {
+  background: #FFF4FD;
+  border: 1px solid #CCA6C9;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.Body-SailorDay .section-Search .container-Search {
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.Body-SailorDay .section-Search .container-Search .bar-Search {
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.Body-SailorDay .section-Search .container-Search .container-Input .input-Search {
+  color: #B4B4B4;
+}
+
+.Body-SailorDay .section-Search .container-Search .container-Input .input-Search-active {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  color: #110038;
+  letter-spacing: 0;
+  line-height: 22px;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.Body-SailorDay .section-Search .container-Search .container-Input .btn-Search {
+  color: #8F8F8F;
+  background: #E6E6E6;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.Body-SailorDay .section-Search .container-Search .container-Input .btn-Search:active {
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  color: #110038;
+  border: 1.5px dotted #110038;
+}
+
+.Body-SailorDay .section-Search .container-Search .container-Input .btn-search-active {
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  color: #110038;
+  border: 1.5px dotted #110038;
+}
+
+.Body-SailorDay .section-Search .suggestion-Search {
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.Body-SailorDay .section-Search .suggestion-Search .suggestion-Btn {
+  color: #110038;
+}
+
+.Body-SailorDay .section-Search .suggestion-Search button:hover {
+  border: 1px dotted #110038;
+}
+
+.Body-SailorDay .section-Search .suggestion-Search button:active {
+  border: 1px dotted #110038;
+}
+
+.Body-SailorDay .container-Gif .message, .Body-SailorDay .result-Search .message {
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  -webkit-box-shadow: 0 1px 0 0 #110038;
+          box-shadow: 0 1px 0 0 #110038;
+}
+
+.Body-SailorDay .section-Suggestions, .Body-SailorDay .style-Section {
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.Body-SailorDay .suggestions .card-Suggestion {
+  border: 1px solid silver;
+  background: #f5f5f5;
+  -webkit-box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.5);
+}
+
+.Body-SailorDay .suggestions .card-Suggestion .tittle-Suggestion {
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+}
+
+.Body-SailorDay .suggestions .card-Suggestion .btn-See-More {
+  background: #4180F6;
+  border: 1px solid #4C2F99;
+  -webkit-box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #284F99, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.Body-SailorDay .suggestions .card-Suggestion .btn-See-More:hover {
   cursor: pointer;
   border: 1px solid #110038;
 }
 
-.Body-SailorDay .container-Suggestions .suggestions .gif-Suggestion:hover {
+.Body-SailorDay .suggestions .gif-Suggestion:hover {
   border: 1px solid #110038;
   -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
           box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
@@ -578,4 +609,7 @@ main {
 }
 
 /* Import styles theme sailor Nigth */
+.Body-SailorNight {
+  background: #110038 100%;
+}
 /*# sourceMappingURL=index.css.map */
