@@ -3,11 +3,9 @@ function changeTheme(themeApply){
      if(themeApply.toLowerCase().trim() === 'sailornight'){
           theme.setAttribute('class', 'Body-SailorNight');
           imgLogo.setAttribute('src' ,'./img/gifOF_logo_dark.png');   
-          console.log('tema de la noche');
      }else{
           theme.setAttribute('class', 'Body-SailorDay');
           imgLogo.setAttribute('src' ,'./img/gifOF_logo.png');
-          console.log('tema del dia default');
      }   
 }
 

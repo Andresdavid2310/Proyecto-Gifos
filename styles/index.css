@@ -1,17 +1,4 @@
 /* Import styles theme sailor day */
-* {
-  margin: 0;
-  padding: 0;
-  font-family: "Chakra Petch", sans-serif;
-  font-size: 16px;
-  outline: none;
-}
-
-main {
-  margin: 3% 8% 0% 5%;
-  padding: 0.5%;
-}
-
 .text-header, .bar-Search {
   height: 30px;
   width: 100%;
@@ -21,10 +8,12 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0 1px 0 0 #110038;
+          box-shadow: 0 1px 0 0 #110038;
+  font-family: "Chakra Petch", sans-serif;
 }
 
 .text-header p, .bar-Search p {
-  margin-left: 1%;
   width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -67,6 +56,13 @@ main {
 }
 
 .hero-gif .my-Gifos a {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
   padding: 3px;
   width: 85px;
   height: 30px;
@@ -123,7 +119,7 @@ main {
 }
 
 .hero-gif .container-Buttons .menu {
-  width: 172px;
+  width: 165px;
   height: 102px;
   position: absolute;
   -webkit-transition: all 0.2s ease-in-out 0s;
@@ -138,8 +134,8 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-transform: translate(88%, 35%);
-          transform: translate(88%, 35%);
+  -webkit-transform: translate(96%, 34%);
+          transform: translate(96%, 34%);
   list-style: none;
 }
 
@@ -263,12 +259,13 @@ main {
 }
 
 .container-Gif .message, .result-Search .message {
+  overflow: hidden;
   visibility: hidden;
   position: absolute;
   bottom: 0.1px;
   width: 100%;
   font-size: 14px;
-  height: 24px;
+  height: auto;
   font-weight: bold;
   color: #FFFFFF;
   letter-spacing: 0;
@@ -283,18 +280,6 @@ main {
   text-overflow: ellipsis;
 }
 
-.container-Gif .view-Gifs:hover, .result-Search .view-Gifs:hover {
-  cursor: pointer;
-  border: 1px solid #110038;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-  outline: 1px dotted #110038;
-}
-
-.container-Gif .view-Gifs:hover .message, .result-Search .view-Gifs:hover .message {
-  visibility: visible;
-}
-
 .container-Gif div, .result-Search div {
   width: 100%;
   font-size: 100px;
@@ -307,7 +292,6 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid silver;
   background: #f5f5f5;
   -webkit-box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.5);
           box-shadow: 0 2px 10px -5px rgba(0, 0, 0, 0.5);
@@ -318,27 +302,6 @@ main {
 .container-Gif div.wide, .result-Search div.wide {
   -ms-grid-column-span: 2;
       grid-column-end: span 2;
-}
-
-.section-Suggestions, .style-Section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 32px;
-  margin-top: 3%;
-  font-family: "Chakra Petch", sans-serif;
-}
-
-.section-Suggestions p, .style-Section p {
-  font-family: "Chakra Petch", sans-serif;
-  margin-left: 1%;
-  text-align: left;
-  font-size: 14px;
-  letter-spacing: 0;
-  color: #110038;
 }
 
 .suggestions {
@@ -398,7 +361,7 @@ main {
 
 .suggestions .card-Suggestion .gif-Suggestion {
   width: 100%;
-  height: 94%;
+  height: 92%;
 }
 
 .suggestions .card-Suggestion .close-Sugges {
@@ -407,6 +370,10 @@ main {
   height: 16px;
   margin-left: 90%;
   position: absolute;
+}
+
+.suggestions .card-Suggestion .close-Sugges img {
+  height: 16px;
 }
 
 .suggestions .card-Suggestion .close-Sugges:hover {
@@ -426,33 +393,79 @@ main {
   line-height: 18px;
 }
 
+.section-Suggestions, .style-Section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 32px;
+  margin-top: 3%;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.section-Suggestions p, .style-Section p {
+  font-family: "Chakra Petch", sans-serif;
+  margin-left: 1%;
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 0;
+  color: #110038;
+}
+
+.view-Gifs:hover {
+  cursor: pointer;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  outline: 1px dotted #110038;
+}
+
+.view-Gifs:hover .message {
+  visibility: visible;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  outline: none;
+}
+
+main {
+  margin: 3% 8% 0% 5%;
+  padding: 0.5%;
+}
+
 .Body-SailorDay {
   background: #fff4fd 50%;
 }
 
 .Body-SailorDay header,
 .Body-SailorDay .bar-Search,
-.Body-SailorDay .text-header {
+.Body-SailorDay .text-header, .Body-SailorDay .message,
+.Body-SailorDay .tittle-Suggestion {
   background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
   background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
-  -webkit-box-shadow: 0 1px 0 0 #110038;
-          box-shadow: 0 1px 0 0 #110038;
-  font-family: "Chakra Petch", sans-serif;
-}
-
-.Body-SailorDay .hero-gif .my-Gifos {
-  text-decoration: none;
 }
 
 .Body-SailorDay .hero-gif .my-Gifos a {
-  text-decoration: none;
-  font-family: "Chakra Petch", sans-serif;
-  font-size: 16px;
   color: #110038;
+}
+
+.Body-SailorDay .hero-gif .my-Gifos a:hover {
+  border: 1px dotted #110038;
+  height: 27px;
+}
+
+.Body-SailorDay .hero-gif .my-Gifos a:active {
+  border: none;
+  font-size: 16px;
+  color: #B4B4B4;
   letter-spacing: 0;
   line-height: 18px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .Body-SailorDay .hero-gif .btn:hover {
@@ -483,11 +496,11 @@ main {
           box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
 }
 
-.Body-SailorDay .hero-gif .container-Buttons .Sailor-Day {
+.Body-SailorDay .hero-gif .container-Buttons .menu .sailor-Day {
   background: #FFF4FD;
   border: 1px solid #CCA6C9;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
 }
 
 .Body-SailorDay .section-Search .container-Search {
@@ -562,8 +575,7 @@ main {
 }
 
 .Body-SailorDay .container-Gif .message, .Body-SailorDay .result-Search .message {
-  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
-  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  /* background-image: $gradientDay; */
   -webkit-box-shadow: 0 1px 0 0 #110038;
           box-shadow: 0 1px 0 0 #110038;
 }
@@ -585,8 +597,7 @@ main {
 .Body-SailorDay .suggestions .card-Suggestion .tittle-Suggestion {
   -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
           box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
-  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
-  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+  /* background-image: $gradientDay; */
 }
 
 .Body-SailorDay .suggestions .card-Suggestion .btn-See-More {
@@ -611,5 +622,214 @@ main {
 /* Import styles theme sailor Nigth */
 .Body-SailorNight {
   background: #110038 100%;
+}
+
+.Body-SailorNight header,
+.Body-SailorNight .bar-Search,
+.Body-SailorNight .text-header,
+.Body-SailorNight .message,
+.Body-SailorNight .tittle-Suggestion {
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+
+.Body-SailorNight .my-Gifos {
+  text-decoration: none;
+}
+
+.Body-SailorNight .my-Gifos a {
+  color: #FFFFFF;
+}
+
+.Body-SailorNight .my-Gifos a:hover {
+  border: 1px solid #FFFFFF;
+  height: 27px;
+}
+
+.Body-SailorNight .my-Gifos a:active {
+  border: none;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.Body-SailorNight .btn:hover {
+  font-family: "Chakra Petch", sans-serif;
+  background: #CE36DB 100%;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  outline: 1px dotted #110038;
+  border: 1.5px dotted #110038;
+}
+
+.Body-SailorNight .btn {
+  font-size: 16px;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+  font-family: "Chakra Petch", sans-serif;
+  background: #A72CB3 100%;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  color: #FFFFFF;
+}
+
+.Body-SailorNight .container-Buttons {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.Body-SailorNight .container-Buttons .menu {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.Body-SailorNight .container-Buttons .menu button {
+  background: #CCCCCC;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.Body-SailorNight .container-Buttons .menu .sailor-Night {
+  background: #2E32FB;
+  border: 1px solid rgba(51, 53, 143, 0.2);
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.Body-SailorNight .section-Search .container-Search {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.Body-SailorNight .section-Search .container-Search .bar-Search {
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.Body-SailorNight .section-Search .container-Search .container-Input .input-Search {
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+  background: #FFFFFF;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  color: #B4B4B4;
+  letter-spacing: 0;
+  line-height: 22px;
+}
+
+.Body-SailorNight .section-Search .container-Search .container-Input .input-Search-active {
+  color: #110038;
+}
+
+.Body-SailorNight .section-Search .container-Search .container-Input .btn-Search {
+  background: #B4B4B4;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  color: #8F8F8F;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.Body-SailorNight .section-Search .container-Search .container-Input .btn-Search:active {
+  background: #CE36DB;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  color: #FFFFFF;
+  border: 1.5px dotted #110038;
+}
+
+.Body-SailorNight .section-Search .container-Search .container-Input .btn-search-active {
+  background: #CE36DB;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  color: #FFFFFF;
+}
+
+.Body-SailorNight .section-Search .suggestion-Search {
+  background: #CCCCCC;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.Body-SailorNight .section-Search .suggestion-Search .suggestion-Btn {
+  color: #110038;
+}
+
+.Body-SailorNight .section-Search .suggestion-Search button:hover {
+  border: 1px dotted #110038;
+}
+
+.Body-SailorNight .section-Search .suggestion-Search button:active {
+  border: 1px dotted #110038;
+}
+
+.Body-SailorNight .container-Gif .message, .Body-SailorNight .result-Search .message {
+  -webkit-box-shadow: 0 1px 0 0 #110038;
+          box-shadow: 0 1px 0 0 #110038;
+}
+
+.Body-SailorNight .section-Suggestions, .Body-SailorNight .style-Section {
+  background: #FFFAFE;
+  border: 1px solid #E6BBE2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.Body-SailorNight .suggestions .card-Suggestion {
+  background: #B4B4B4;
+  /* box-shadow: $boxNigth5; */
+}
+
+.Body-SailorNight .suggestions .tittle-Suggestion {
+  -webkit-box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.Body-SailorNight .suggestions .btn-See-More {
+  background: #2E32FB;
+  border: 1px solid #4C2F99;
+  -webkit-box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.Body-SailorNight .suggestions .btn-See-More:hover {
+  background: #2629CC;
+  border: 1px solid #4C2F99;
+  -webkit-box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #2124B3, inset 2px 2px 0 0 #FFFFFF;
+  cursor: pointer;
+}
+
+.Body-SailorNight .gif-Suggestion:hover {
+  /* border: 1px solid #110038; */
+  -webkit-box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+  outline: 1px dotted #FFFFFF;
+}
+
+.Body-SailorNight .view-Gifs:hover {
+  cursor: pointer;
+  border: 1px solid #FFFFFF;
+  -webkit-box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
+  outline: 1px dotted #FFFFFF;
+}
+
+.Body-SailorNight .view-Gifs:hover .message {
+  visibility: visible;
 }
 /*# sourceMappingURL=index.css.map */

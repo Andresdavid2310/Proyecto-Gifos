@@ -1,4 +1,206 @@
 .Body-SailorNight{
      background: rgb(17, 0, 56) 100%;
+     header,
+     .bar-Search,
+     .text-header,
+     .message,
+     .tittle-Suggestion {
+     background-image: $gradientNigth;
+     }
+     
+     .my-Gifos{
+          text-decoration: none;
+          a{
+               color: #FFFFFF;
+          }
+
+          a:hover{
+               border: 1px solid #FFFFFF;
+               height: 27px;
+          }
+          a:active{
+               border: none;
+               font-size: 16px;
+               color: #FFFFFF;
+               letter-spacing: 0;
+               line-height: 18px;
+          }
+     }
+
+     .btn:hover {
+          font-family: $fonts;
+          background: #CE36DB 100%;
+          border: 1px solid #110038;
+          box-shadow: $boxNigth1;
+          outline: 1px dotted #110038;
+          border: 1.5px dotted #110038;
+     }
+
+     .btn{
+          font-size: 16px;
+          letter-spacing: 0;
+          text-align: center;
+          line-height: 18px;
+          font-family: $fonts;
+          background: #A72CB3 100%;
+          border: 1px solid #110038;
+          box-shadow: $boxNigth1;
+          color:#FFFFFF;
+     }
+
+     .container-Buttons{
+          font-family: $fonts;
+
+          .menu{
+               background:  #B4B4B4;
+               box-shadow: $boxNigth2;    
+
+               button{
+                    background: #CCCCCC;
+                    border: 1px solid #808080;
+                    box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+                    
+               }
+
+               .sailor-Night {
+                    background: #2E32FB;
+                    border: 1px solid rgba(51,53,143,0.20);
+                    box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+               }
+
+          }  
+     
+     }
+
+
+     .section-Search{
+
+          .container-Search {
+               background: $colorGrayNigth;
+               box-shadow: $boxNigth2;
+
+               .bar-Search{
+                    box-shadow: $boxNigth2;
+               }
+
+               .container-Input{
+                    
+                    .input-Search{
+                         box-shadow: $boxNigth2;
+                         background: #FFFFFF;
+                         border: 1px solid #979797;
+                         box-shadow: $boxNigth3;
+                         font-family: $fonts;
+                         font-size: 16px;
+                         color: $colorGrayNigth;
+                         letter-spacing: 0;
+                         line-height: 22px;
+                    }
+
+                    .input-Search-active{ 
+                         color: #110038; 
+                    }
+
+                    .btn-Search{
+                         background:$colorGrayNigth;
+                         border: 1px solid #808080;
+                         box-shadow: $boxNigth4;
+                         font-family: $fonts;
+                         font-size: 16px;
+                         color: #8F8F8F;
+                         letter-spacing: 0;
+                         line-height: 18px;
+                    }
+
+                    .btn-Search:active{
+                         background: #CE36DB;
+                         border: 1px solid #110038;
+                         box-shadow: $boxNigth1;
+                         color: #FFFFFF;
+                         border: 1.5px dotted #110038;
+                    }
+                    .btn-search-active{
+                         background: #CE36DB;
+                         box-shadow: $boxDay1;
+                         color: #FFFFFF;
+                    }
+               }
+          
+          }   
+
+          .suggestion-Search{
+               background: #CCCCCC;
+               border: 1px solid #808080;
+               box-shadow: $boxNigth4;
+               
+
+               .suggestion-Btn{
+                    color: #110038;
+               }
+
+               button:hover{
+                    border: 1px dotted #110038;
+               }
+
+               button:active{
+                    border: 1px dotted #110038;
+               }
+          }
+
+     }
+
+     .container-Gif, .result-Search{
+          .message{
+               box-shadow: 0 1px 0 0 #110038;
+          }
+             
+     }
+
+     .section-Suggestions, .style-Section {
+          background: #FFFAFE;
+          border: 1px solid #E6BBE2;
+          box-shadow: $boxDay2;
+     }
+
+     .suggestions{
+          .card-Suggestion{
+               background: $colorGrayNigth;
+               /* box-shadow: $boxNigth5; */
+          }
+
+          .tittle-Suggestion{
+               box-shadow: $boxNigth5;
+          }
+
+          .btn-See-More{
+               background: #2E32FB;
+               border: 1px solid #4C2F99;
+               box-shadow: $boxNigth6;
+          }
+               
+          .btn-See-More:hover{
+               background: #2629CC;
+               border: 1px solid #4C2F99;
+               box-shadow: $boxNigth6;
+               cursor: pointer;
+          }
+          
+     }
+     .gif-Suggestion:hover{
+          /* border: 1px solid #110038; */
+          box-shadow: $boxNigth5;
+          outline: 1px dotted #FFFFFF;     
+     }
+
+     .view-Gifs:hover{
+          cursor: pointer;
+          border: 1px solid #FFFFFF;
+          box-shadow: $boxNigth5;
+          outline: 1px dotted #FFFFFF;
+          
+          .message{
+               visibility: visible;
+          }
+     }
 }
 
