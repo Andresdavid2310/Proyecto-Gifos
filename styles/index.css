@@ -77,19 +77,6 @@
           justify-content: center;
 }
 
-.hero-gif .my-Gifos a:hover {
-  border: 1px dotted #110038;
-  height: 27px;
-}
-
-.hero-gif .my-Gifos a:active {
-  border: none;
-  font-size: 16px;
-  color: #B4B4B4;
-  letter-spacing: 0;
-  line-height: 18px;
-}
-
 .hero-gif .container-Buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -414,18 +401,7 @@
   color: #110038;
 }
 
-.view-Gifs:hover {
-  cursor: pointer;
-  border: 1px solid #110038;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-  outline: 1px dotted #110038;
-}
-
-.view-Gifs:hover .message {
-  visibility: visible;
-}
-
+/*import styles sailor day */
 * {
   margin: 0;
   padding: 0;
@@ -617,6 +593,18 @@ main {
   -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
           box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
   outline: 1px dotted #110038;
+}
+
+.Body-SailorDay .view-Gifs:hover {
+  cursor: pointer;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  outline: 1px dotted #110038;
+}
+
+.Body-SailorDay .view-Gifs:hover .message {
+  visibility: visible;
 }
 
 /* Import styles theme sailor Nigth */

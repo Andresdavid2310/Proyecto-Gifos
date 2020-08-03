@@ -1,0 +1,305 @@
+.text-header, .bar-Search {
+  height: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 1px 0 0 #110038;
+          box-shadow: 0 1px 0 0 #110038;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.text-header p, .bar-Search p {
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 12px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.logo {
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  margin-left: 3%;
+}
+
+.logo-Arrow {
+  cursor: pointer;
+}
+
+.hero-gif {
+  font-family: "Chakra Petch", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero-gif .my-Gifos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.hero-gif .my-Gifos a {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 18px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  padding: 3px;
+  width: 85px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-gif .container-Buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+}
+
+.hero-gif .container-Buttons .create-Gifos {
+  width: 144px;
+  height: 36px;
+  margin-right: 5%;
+}
+
+.hero-gif .container-Buttons .select-Theme {
+  width: 144px;
+  height: 36px;
+}
+
+.hero-gif .container-Buttons .button-Menu {
+  width: 36px;
+  height: 36px;
+}
+
+.hero-gif .container-Buttons .menu {
+  width: 165px;
+  height: 102px;
+  position: absolute;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translate(96%, 34%);
+          transform: translate(96%, 34%);
+  list-style: none;
+}
+
+.hero-gif .container-Buttons .btnlist {
+  width: 150px;
+  height: 36px;
+}
+
+.hero-gif .container-Buttons .view {
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  opacity: 1;
+  visibility: visible;
+}
+
+/*import styles sailor day */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  outline: none;
+}
+
+main {
+  margin: 3% 8% 0% 5%;
+  padding: 0.5%;
+}
+
+.Body-SailorDay {
+  background: #fff4fd 50%;
+}
+
+.Body-SailorDay header,
+.Body-SailorDay .bar-Search,
+.Body-SailorDay .text-header, .Body-SailorDay .message,
+.Body-SailorDay .tittle-Suggestion {
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
+}
+
+.Body-SailorDay .hero-gif .my-Gifos a {
+  color: #110038;
+}
+
+.Body-SailorDay .hero-gif .my-Gifos a:hover {
+  border: 1px dotted #110038;
+  height: 27px;
+}
+
+.Body-SailorDay .hero-gif .my-Gifos a:active {
+  border: none;
+  font-size: 16px;
+  color: #B4B4B4;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.Body-SailorDay .hero-gif .btn:hover {
+  font-family: "Chakra Petch", sans-serif;
+  background: #E6BBE2;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  outline: 1px dotted #110038;
+}
+
+.Body-SailorDay .hero-gif .btn {
+  font-family: "Chakra Petch", sans-serif;
+  background: #F7C9F3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.Body-SailorDay .hero-gif .container-Buttons {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.Body-SailorDay .hero-gif .container-Buttons .menu {
+  font-family: "Chakra Petch", sans-serif;
+  background: #E6E6E6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.Body-SailorDay .hero-gif .container-Buttons .menu .sailor-Day {
+  background: #FFF4FD;
+  border: 1px solid #CCA6C9;
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+/* Import styles theme sailor Nigth */
+.Body-SailorNight {
+  background: #110038 100%;
+}
+
+.Body-SailorNight header,
+.Body-SailorNight .bar-Search,
+.Body-SailorNight .text-header,
+.Body-SailorNight .message,
+.Body-SailorNight .tittle-Suggestion {
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
+}
+
+.Body-SailorNight .my-Gifos {
+  text-decoration: none;
+}
+
+.Body-SailorNight .my-Gifos a {
+  color: #FFFFFF;
+}
+
+.Body-SailorNight .my-Gifos a:hover {
+  border: 1px solid #FFFFFF;
+  height: 27px;
+}
+
+.Body-SailorNight .my-Gifos a:active {
+  border: none;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+
+.Body-SailorNight .btn:hover {
+  font-family: "Chakra Petch", sans-serif;
+  background: #CE36DB 100%;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  outline: 1px dotted #110038;
+  border: 1.5px dotted #110038;
+}
+
+.Body-SailorNight .btn {
+  font-size: 16px;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 18px;
+  font-family: "Chakra Petch", sans-serif;
+  background: #A72CB3 100%;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  color: #FFFFFF;
+}
+
+.Body-SailorNight .container-Buttons {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.Body-SailorNight .container-Buttons .menu {
+  background: #B4B4B4;
+  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
+}
+
+.Body-SailorNight .container-Buttons .menu button {
+  background: #CCCCCC;
+  border: 1px solid #808080;
+  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.Body-SailorNight .container-Buttons .menu .sailor-Night {
+  background: #2E32FB;
+  border: 1px solid rgba(51, 53, 143, 0.2);
+  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+}
+/*# sourceMappingURL=index.css.map */

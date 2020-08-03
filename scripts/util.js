@@ -32,7 +32,9 @@ let loadUrl = async(urlResponse) => {
      }    
 }
 
-
+createGifos = ()=>{
+     window.location.href = "../pages/crearGifos/crearGifos.html"
+}
 //------Function create card dinamic---------//
 const createCard = (elements, classContainer,father) => {
      let container = document.createElement('div');
