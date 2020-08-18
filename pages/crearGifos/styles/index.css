@@ -51,113 +51,6 @@
   margin-left: 4.8%;
 }
 
-.hero-gif {
-  font-family: "Chakra Petch", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.hero-gif .my-Gifos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
-.hero-gif .my-Gifos a {
-  font-family: "Chakra Petch", sans-serif;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: 18px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-decoration: none;
-  padding: 3px;
-  width: 85px;
-  height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.hero-gif .container-Buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  text-align: center;
-}
-
-.hero-gif .container-Buttons .create-Gifos {
-  width: 144px;
-  height: 36px;
-  margin-right: 5%;
-}
-
-.hero-gif .container-Buttons .select-Theme {
-  width: 144px;
-  height: 36px;
-}
-
-.hero-gif .container-Buttons .button-Menu {
-  width: 36px;
-  height: 36px;
-}
-
-.hero-gif .container-Buttons .menu {
-  width: 165px;
-  height: 102px;
-  position: absolute;
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
-  visibility: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-transform: translate(96%, 34%);
-          transform: translate(96%, 34%);
-  list-style: none;
-}
-
-.hero-gif .container-Buttons .btnlist {
-  width: 150px;
-  height: 36px;
-}
-
-.hero-gif .container-Buttons .view {
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
-  opacity: 1;
-  visibility: visible;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -662,7 +555,7 @@ main {
   content: url(../../../img/camera_light.svg);
 }
 
-.Body-SailorNight .style-Section p {
+.Body-SailorNight .style-Section p, .Body-SailorNight #my-Gifos {
   color: #FFFFFF;
 }
 /*# sourceMappingURL=index.css.map */

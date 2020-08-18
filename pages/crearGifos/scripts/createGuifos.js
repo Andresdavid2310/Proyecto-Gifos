@@ -1,6 +1,7 @@
 let video = document.getElementById('video');
 let gifRecorder;
 let gifSrc;
+let gifNewId;
 
 async function initStream() {
      document.querySelector('.create-Gifs').style.display = "none";
@@ -179,10 +180,14 @@ let postApiGiphos = (gif) =>{
           })
 
           .then(data => {
+               gifNewId = data.data.id;
+               console.log(gifNewId)
                localStorage.setItem(
                  `mygif-${data.data.id}`,
                  JSON.stringify(data.data)
                );
+
+
 
                confirmloadGif(data);
           });
@@ -203,8 +208,8 @@ let confirmloadGif = (data)=>{
 
           <div class ="btns-gif-create">
                <p> Guifo subido con éxito!</p>
-               <button class="copy btn-Create-Gif repeat push cancel">Copiar Enlace Guifo</button>
-               <button class="copy btn-Create-Gif repeat push cancel">Descargar Guifo</button>
+               <button class="copy btn-Create-Gif repeat push cancel" onclick="copyUrlGifNew()">Copiar Enlace Guifo</button>
+               <button class="copy btn-Create-Gif repeat push cancel" onclick ="downloadGifNew()">Descargar Guifo</button>
 
                <div class="btn-listo">
                     <a href = "./createGuifos.html">
@@ -219,3 +224,30 @@ let confirmloadGif = (data)=>{
   
 }
 
+function copyUrlGifNew() {
+     const tempElement = document.createElement("textarea");
+     tempElement.value = `https://giphy.com/gifs/${gifNewId}`;
+     tempElement.setAttribute("readonly", "");
+     tempElement.style = 'display: "none"';
+     document.body.appendChild(tempElement);
+     tempElement.select();
+     document.execCommand("copy");
+     const popupContent =  `Se ha copiado el enlace ${tempElement.value} al portapapeles`;
+     alert(popupContent);
+     console.log("Copied data to clipboard!");
+     document.body.removeChild(tempElement);
+}
+
+async function downloadGifNew() {
+     const GifuyUrl = `https://media.giphy.com/media/${gifNewId}/giphy.gif`; 
+     const gifgenerate = fetch(GifuyUrl);
+     const gifBlob = (await gifgenerate).blob();
+     const urlGif = URL.createObjectURL(await gifBlob);
+     const saveImg = document.createElement("a");
+     saveImg.href = urlGif;
+     saveImg.download = "downloaded-guifo.gif";
+     saveImg.style = 'display: "none"';
+     document.body.appendChild(saveImg);
+     saveImg.click();
+     document.body.removeChild(saveImg);
+}
