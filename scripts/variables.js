@@ -1,5 +1,5 @@
 //-----Variables-----//
-const URL = 'https://api.giphy.com/v1/gifs/';
+let  ENDPOINT = 'https://api.giphy.com/v1/gifs/';
 const APY_KEY = 'api_key=P9hhr5BQGgN5rn5sa4pUU8CPGHpIabhm';
 
 //---- capture value input and botton------///

@@ -15,7 +15,7 @@ let searchTextInpunt = async(e) =>{
      let textInput = e.target.value;
      if(textInput){  
           let category = 'search';
-          let urlResponse = (`${URL}${category}/tags?${APY_KEY}&q=${textInput.trim()}`);
+          let urlResponse = (`${ENDPOINT}${category}/tags?${APY_KEY}&q=${textInput.trim()}`);
           console.log(urlResponse);
           
           let dates = await loadUrl(urlResponse);
@@ -43,7 +43,7 @@ let searchText = async(text) => {
           console.log(cardTrends);
      
           let category = 'search';
-          let urlResponse =(`${URL}${category}?${APY_KEY}&q=${textForSearch} , {method:'GET' }`); 
+          let urlResponse =(`${ENDPOINT}${category}?${APY_KEY}&q=${textForSearch} , {method:'GET' }`); 
           console.log(urlResponse);
           loadTrends(urlResponse,cardTrends);
 

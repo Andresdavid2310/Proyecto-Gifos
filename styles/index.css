@@ -551,7 +551,8 @@ main {
 }
 
 .Body-SailorDay .container-Gif .message, .Body-SailorDay .result-Search .message {
-  /* background-image: $gradientDay; */
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
   -webkit-box-shadow: 0 1px 0 0 #110038;
           box-shadow: 0 1px 0 0 #110038;
 }
@@ -573,7 +574,8 @@ main {
 .Body-SailorDay .suggestions .card-Suggestion .tittle-Suggestion {
   -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
           box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
-  /* background-image: $gradientDay; */
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
 }
 
 .Body-SailorDay .suggestions .card-Suggestion .btn-See-More {
@@ -807,6 +809,7 @@ main {
   -webkit-box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
           box-shadow: inset -2px -2px 0 0 #5C5C5C, inset 2px 2px 0 0 #FFFFFF;
   outline: 1px dotted #FFFFFF;
+  border: 1px dotted #110038;
 }
 
 .Body-SailorNight .view-Gifs:hover {

@@ -5,7 +5,7 @@ HASTAG.forEach(async (suggest, index)=>{
      let textSuggestion = document.querySelectorAll('.card-Suggestion .tittle-Suggestion p');
      
      let category = 'search';
-     let urlResponse = (`${URL}${category}?${APY_KEY}&q=${suggest}, { method: 'GET' }`); 
+     let urlResponse = (`${ENDPOINT}${category}?${APY_KEY}&q=${suggest}, { method: 'GET' }`); 
      let dates = await loadUrl(urlResponse);
      let GifRandom = dates.data.sort(()=> Math.random()-0.6);
      cardSuggestions[index].setAttribute('src', `${GifRandom[numImg].images.downsized_medium.url}`);
@@ -28,36 +28,44 @@ let loadTrends = async(urlTrending, cardTrends) => {
      }
 }
 
+let loadPagePrincipal = ()=>{
+     
+     if (localStorage.getItem("theme") == 2) {
+          theme.setAttribute('class', 'Body-SailorNight');
+          imgLogo.setAttribute('src' ,'./img/gifOF_logo_dark.png')
+     }
 
-category = 'trending';
-urlResponse =(`${URL}${category}?${APY_KEY}&q=limit200, {method:'GET' }`);
-createCard(10,'container-Gif',document.querySelector('.container-Gifs'));
-card = document.querySelectorAll('.container-Gif .card-Gif');
-loadTrends(urlResponse, card);
+     category = 'trending';
+     urlResponse =(`${ENDPOINT}${category}?${APY_KEY}&q=limit200, 
+     {method:'GET' }`);
+     createCard(10,'container-Gif',document.querySelector('.container-Gifs'));
+     card = document.querySelectorAll('.container-Gif .card-Gif');
+     loadTrends(urlResponse, card);
+}
+loadPagePrincipal();
 
 //_---- Function see More Suggestion ----//
 let seeMoreSuggestion = async(id)=>{
      hasTag = document.getElementById(id).innerHTML
      cardSuggesion = document.querySelectorAll('#container-Gif .card-Gif')
      let category = 'search';
-     let urlResponse =(`${URL}${category}?${APY_KEY}&q=${hasTag.substr(1)}, {method:'GET' }`);
+     let urlResponse =(`${ENDPOINT}${category}?${APY_KEY}&q=${hasTag.substr(1)}, {method:'GET' }`);
      await loadTrends(urlResponse, cardSuggesion);
      setTimeout(()=>{
           location.href = `#section-Trends`;
      }, 200)     
 }
 
-
 let searchCategories = async() =>{
      let category = 'categories';
-     let urlResponse = (`${URL}${category}?${APY_KEY}`);
+     let urlResponse = (`${ENDPOINT}${category}?${APY_KEY}`);
      let dates = await loadUrl(urlResponse);
      return GifRandom = dates.data.sort(()=> Math.random()-0.6);
 }
 
 let searchImgCategories =async() =>{
      category = 'search';
-     urlResponse = (`${URL}${category}?${APY_KEY}&q=${categorySearch.substr(1)}, {method: 
+     urlResponse = (`${ENDPOINT}${category}?${APY_KEY}&q=${categorySearch.substr(1)}, {method: 
      'GET' }`);
      dates = await loadUrl(urlResponse);
      return gifImg = dates.data.sort(()=> Math.random()-0.6);
@@ -82,9 +90,7 @@ let changeSuggestion = async (element, id) =>{
      document.querySelector('.suggestions').appendChild(clon);
 }
 
-
 //---Function for reload page principal----//
-
 reloadIndex = () =>{
      location.assign('./index.html');
      document.getElementById('input-Search').value = '';

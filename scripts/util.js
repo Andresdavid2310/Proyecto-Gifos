@@ -3,9 +3,11 @@ function changeTheme(themeApply){
      if(themeApply.toLowerCase().trim() === 'sailornight'){
           theme.setAttribute('class', 'Body-SailorNight');
           imgLogo.setAttribute('src' ,'./img/gifOF_logo_dark.png');   
+          localStorage.setItem("theme", 2);
      }else{
           theme.setAttribute('class', 'Body-SailorDay');
           imgLogo.setAttribute('src' ,'./img/gifOF_logo.png');
+          localStorage.setItem("theme", 1);
      }   
 }
 
@@ -33,8 +35,9 @@ let loadUrl = async(urlResponse) => {
 }
 
 createGifos = ()=>{
-     window.location.href = "../pages/crearGifos/crearGifos.html"
+     window.location.href = "../pages/crearGifos/createGuifos.html"
 }
+
 //------Function create card dinamic---------//
 const createCard = (elements, classContainer,father) => {
      let container = document.createElement('div');

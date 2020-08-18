@@ -1,4 +1,4 @@
-.text-header, .bar-Search {
+.text-header {
   height: 30px;
   width: 100%;
   display: -webkit-box;
@@ -12,7 +12,7 @@
   font-family: "Chakra Petch", sans-serif;
 }
 
-.text-header p, .bar-Search p {
+.text-header p {
   width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -34,6 +34,21 @@
 
 .logo-Arrow {
   cursor: pointer;
+}
+
+.hero {
+  font-family: "Chakra Petch", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4%;
+  margin-left: 4.8%;
 }
 
 .hero-gif {
@@ -143,6 +158,383 @@
   visibility: visible;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.create-Gifs,
+.video-Recording {
+  margin: 40px auto;
+  width: 60%;
+  background: #e6e6e6;
+  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
+  font-size: 0.8rem;
+}
+
+.tittle-Create-Gif {
+  color: white;
+  font-weight: bolder;
+  margin: 3px;
+  padding: 1px 4px;
+}
+
+.window-Create-Gif {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.window-Create-Gif * {
+  padding: 0 5px;
+}
+
+.text-Create-Gif {
+  margin-top: 20px;
+}
+
+.btns-Create-Gifs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  padding: 10px;
+  float: right;
+}
+
+.btns-Create-Gifs * {
+  margin: 0 4px;
+}
+
+.btn-Create-Gif {
+  width: 144px;
+  height: 36px;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1rem;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.aline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 82%;
+}
+
+.aline span {
+  padding: 0.20rem 1.0rem;
+}
+
+.aline img {
+  position: relative;
+  border-right: 1px solid black;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  margin-top: -4px;
+  margin-bottom: -4px;
+  margin-left: -4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 1.3rem;
+}
+
+.video-Recording {
+  display: none;
+  margin: 30px auto;
+}
+
+.tittle-Create-Gif .btn-Close {
+  float: right;
+  margin-top: 1px;
+}
+
+.container-Video {
+  padding: 2px 10px;
+}
+
+#video {
+  padding: 1px;
+  width: 100%;
+  height: 300px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  background-color: #666;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+}
+
+.container-Gif-Preview {
+  display: none;
+}
+
+.container-Gif-Preview img {
+  width: 100%;
+  height: 50vh;
+}
+
+.btn-Capture {
+  margin: 0 5px 5px 0;
+  padding: 5px 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-Camera {
+  /* display: flex; */
+  /* flex-direction: end; */
+  /* float: left; */
+  margin-left: 78%;
+}
+
+.btn-Capture,
+.btn-Camera span {
+  padding: 3px;
+  vertical-align: middle;
+}
+
+.stop {
+  display: none;
+  color: white;
+  background: #ff6161;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #993a3a, inset 1px 1px 0 0 #ffffff;
+          box-shadow: inset -1px -1px 0 0 #993a3a, inset 1px 1px 0 0 #ffffff;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.btns-Upload-Gifs {
+  display: none;
+}
+
+#timer {
+  height: 36px;
+  width: 124px;
+  display: none;
+  -ms-flex-item-align: center;
+      align-self: center;
+  background-color: white;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  padding: 15px;
+  float: left;
+  margin-left: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.activetimer {
+  margin-top: 10px;
+  position: absolute;
+  -webkit-transform: translate(0, -160%);
+          transform: translate(0, -160%);
+}
+
+.repeat {
+  background: #fff4fd;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  margin-right: 10px;
+}
+
+.upload {
+  background: #f7c9f3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.push {
+  margin-left: auto;
+}
+
+.uploading-gif {
+  background: #ffffff;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  text-align: center;
+  height: 300px;
+}
+
+.uploading-gif img {
+  margin-top: 80px;
+  width: 30px;
+  height: auto;
+}
+
+.uploading-gif-title {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  color: #110038;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+}
+
+.uploading-gif,
+.load {
+  margin: 0 auto;
+  /* width: 40%; */
+  margin-top: 25px;
+}
+
+.uploading-gif,
+.time-left {
+  color: rgba(17, 0, 56, 0.64);
+  font-size: 0.7rem;
+}
+
+.content-modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gif-Create {
+  background: #ffffff;
+  border: 1px solid #979797;
+  -webkit-box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+          box-shadow: inset -2px -2px 0 0 #E6E6E6, inset 2px 2px 0 0 #000000;
+  width: 70%;
+  height: 40%;
+  margin: 8px;
+  padding: 2px;
+}
+
+.copy {
+  white-space: normal;
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.btns-gif-create {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 5%;
+  margin-left: 5%;
+  -webkit-box-align: justify;
+      -ms-flex-align: justify;
+          align-items: justify;
+}
+
+.btns-gif-create p {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: bold;
+}
+
+.btn-listo {
+  margin-top: 90%;
+}
+
+.style-Section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 85%;
+  height: 32px;
+  margin-top: 3%;
+  margin-left: 5%;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.style-Section p {
+  font-family: "Chakra Petch", sans-serif;
+  margin-left: 1%;
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 0;
+  color: #110038;
+}
+
+.container-My-Gifos {
+  margin-top: 2%;
+  width: 85%;
+  margin-left: 5%;
+}
+
+#my-Gifos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (320px)[auto];
+      grid-template-rows: repeat(auto, 320px);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+#my-Gifos img {
+  background-color: rgba(128, 128, 128, 0.082);
+  background-image: url(https://win98icons.alexmeub.com/icons/png/application_hourglass-0.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+}
+
+.progress-bar {
+  margin: 0 auto;
+  height: 30px;
+  width: 250px;
+  position: relative;
+  overflow: hidden;
+  display: none;
+}
+
+.progress-bar ul {
+  padding: 4px;
+  position: absolute;
+}
+
+.progress-bar ul li {
+  list-style-type: none;
+  height: 20px;
+  width: 12px;
+  background-color: #f7c9f3;
+  border: 1px solid #110038;
+  display: none;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
 /*import styles sailor day */
 * {
   margin: 0;
@@ -162,63 +554,51 @@ main {
 }
 
 .Body-SailorDay header,
-.Body-SailorDay .bar-Search,
-.Body-SailorDay .text-header, .Body-SailorDay .message,
 .Body-SailorDay .tittle-Suggestion {
   background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
   background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
 }
 
-.Body-SailorDay .hero-gif .my-Gifos a {
-  color: #110038;
+.Body-SailorDay .tittle-Create-Gif {
+  background-image: -webkit-gradient(linear, right top, left top, from(#F7C9F3), to(#4180F6));
+  background-image: linear-gradient(270deg, #F7C9F3 0%, #4180F6 100%);
 }
 
-.Body-SailorDay .hero-gif .my-Gifos a:hover {
-  border: 1px dotted #110038;
-  height: 27px;
-}
-
-.Body-SailorDay .hero-gif .my-Gifos a:active {
-  border: none;
-  font-size: 16px;
-  color: #B4B4B4;
-  letter-spacing: 0;
-  line-height: 18px;
-}
-
-.Body-SailorDay .hero-gif .btn:hover {
-  font-family: "Chakra Petch", sans-serif;
-  background: #E6BBE2;
+.Body-SailorDay .cancel {
+  background: #fff4fd;
   border: 1px solid #110038;
   -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
           box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+}
+
+.Body-SailorDay .confirm {
+  background: #f7c9f3;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  margin-bottom: 12px;
+}
+
+.Body-SailorDay .cancel:hover {
+  background: #ecdee9;
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
   outline: 1px dotted #110038;
 }
 
-.Body-SailorDay .hero-gif .btn {
-  font-family: "Chakra Petch", sans-serif;
-  background: #F7C9F3;
+.Body-SailorDay .confirm:hover {
+  background: #dfb5db;
   border: 1px solid #110038;
-  -webkit-box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #997D97, inset 1px 1px 0 0 #FFFFFF;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  outline: 1px dotted #110038;
 }
 
-.Body-SailorDay .hero-gif .container-Buttons {
-  font-family: "Chakra Petch", sans-serif;
-}
-
-.Body-SailorDay .hero-gif .container-Buttons .menu {
-  font-family: "Chakra Petch", sans-serif;
-  background: #E6E6E6;
-  -webkit-box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #B4B4B4, inset 2px 2px 0 0 #FFFFFF;
-}
-
-.Body-SailorDay .hero-gif .container-Buttons .menu .sailor-Day {
-  background: #FFF4FD;
-  border: 1px solid #CCA6C9;
-  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
+.Body-SailorDay .tittle-My-Gifos {
+  border: 1px solid #e6bbe2;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #80687d;
+          box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #80687d;
 }
 
 /* Import styles theme sailor Nigth */
@@ -235,71 +615,54 @@ main {
   background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
 }
 
-.Body-SailorNight .my-Gifos {
-  text-decoration: none;
+.Body-SailorNight .tittle-Create-Gif {
+  background-image: -webkit-gradient(linear, right top, left top, from(#EE3EFE), to(#2E32FB));
+  background-image: linear-gradient(270deg, #EE3EFE 0%, #2E32FB 100%);
 }
 
-.Body-SailorNight .my-Gifos a {
+.Body-SailorNight .cancel {
+  background: #110038;
+  border: 1px solid #b4b4b4;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
   color: #FFFFFF;
 }
 
-.Body-SailorNight .my-Gifos a:hover {
-  border: 1px solid #FFFFFF;
-  height: 27px;
-}
-
-.Body-SailorNight .my-Gifos a:active {
-  border: none;
-  font-size: 16px;
-  color: #FFFFFF;
-  letter-spacing: 0;
-  line-height: 18px;
-}
-
-.Body-SailorNight .btn:hover {
-  font-family: "Chakra Petch", sans-serif;
+.Body-SailorNight .confirm {
   background: #CE36DB 100%;
   border: 1px solid #110038;
   -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
           box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
-  outline: 1px dotted #110038;
-  border: 1.5px dotted #110038;
+  margin-bottom: 12px;
+  color: #FFFFFF;
 }
 
-.Body-SailorNight .btn {
-  font-size: 16px;
-  letter-spacing: 0;
-  text-align: center;
-  line-height: 18px;
-  font-family: "Chakra Petch", sans-serif;
+.Body-SailorNight .confirm:hover {
   background: #A72CB3 100%;
   border: 1px solid #110038;
   -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
           box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  outline: 1px dotted #110038;
+}
+
+.Body-SailorNight .cancel:hover {
+  border: 1px solid #110038;
+  -webkit-box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+          box-shadow: inset -1px -1px 0 0 #A72CB3, inset 1px 1px 0 0 #FFFFFF;
+  outline: 1px dotted #110038;
+}
+
+.Body-SailorNight .tittle-My-Gifos {
+  border: 1px solid #2e32fb;
+  -webkit-box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #110038;
+          box-shadow: inset -2px -2px 0 0 #e6dce4, inset 2px 2px 0 0 #110038;
+}
+
+.Body-SailorNight .btn-Camera {
+  content: url(../../../img/camera_light.svg);
+}
+
+.Body-SailorNight .style-Section p {
   color: #FFFFFF;
-}
-
-.Body-SailorNight .container-Buttons {
-  font-family: "Chakra Petch", sans-serif;
-}
-
-.Body-SailorNight .container-Buttons .menu {
-  background: #B4B4B4;
-  -webkit-box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
-          box-shadow: inset -2px -2px 0 0 #8F8F8F, inset 2px 2px 0 0 #FFFFFF;
-}
-
-.Body-SailorNight .container-Buttons .menu button {
-  background: #CCCCCC;
-  border: 1px solid #808080;
-  -webkit-box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #B4B4B4, inset 1px 1px 0 0 #FFFFFF;
-}
-
-.Body-SailorNight .container-Buttons .menu .sailor-Night {
-  background: #2E32FB;
-  border: 1px solid rgba(51, 53, 143, 0.2);
-  -webkit-box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
-          box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
 }
 /*# sourceMappingURL=index.css.map */

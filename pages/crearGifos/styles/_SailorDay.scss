@@ -14,64 +14,45 @@ main{
 
 .Body-SailorDay{
      background: rgb(255, 244, 253) 50%;
-     header,
-     .bar-Search,
-     .text-header, .message, 
+     header, 
      .tittle-Suggestion {
           background-image: $gradientDay;
      }
 
-     .hero-gif{
-          
-          .my-Gifos{
-               a{
-                    color: #110038;
-               }
+     .tittle-Create-Gif{
+          background-image: $gradientDay;
+     }
 
-               a:hover{
-                    border: 1px dotted #110038;
-                    height: 27px;
-               }
-               a:active{
-                    border: none;
-                    font-size: 16px;
-                    color: #B4B4B4;
-                    letter-spacing: 0;
-                    line-height: 18px;
-               }
-          }
+     .cancel {
+          background: #fff4fd;
+          border: 1px solid #110038;
+          box-shadow: $boxDay1;
+     }
+     
+     .confirm {
+          background: #f7c9f3;
+          border: 1px solid #110038;
+          box-shadow: $boxDay1;
+          margin-bottom: 12px;
+     }
 
-          .btn:hover {
-               font-family: $fonts;
-               background: #E6BBE2;
-               border: 1px solid #110038;
-               box-shadow: $boxDay1;
-               outline: 1px dotted #110038;
-          }
+     .cancel:hover {
+          background: rgb(236, 222, 233);
+          border: 1px solid #110038;
+          box-shadow: $boxNigth1;
+          outline: 1px dotted #110038;
+     }
+     
+     .confirm:hover {
+          background: rgb(223, 181, 219);
+          border: 1px solid #110038;
+          box-shadow: $boxNigth1;
+          outline: 1px dotted #110038;
+     }
 
-          .btn{
-               font-family: $fonts;
-               background: #F7C9F3;
-               border: 1px solid #110038;
-               box-shadow: $boxDay1;
-          }
 
-          .container-Buttons{
-               font-family: $fonts;
-
-               .menu{
-                    font-family: $fonts;
-                    background: #E6E6E6;
-                    box-shadow: $boxDay2;
-                    
-                    .sailor-Day {
-                         background: #FFF4FD;
-                         border: 1px solid #CCA6C9;
-                         box-shadow: inset -1px -1px 0 0 #E6DCE4, inset 1px 1px 0 0 #FFFFFF;
-                    }
-               }
-
-          }
-
+     .tittle-My-Gifos{
+          border: 1px solid #e6bbe2;
+          box-shadow:$boxDay3; 
      }
 }

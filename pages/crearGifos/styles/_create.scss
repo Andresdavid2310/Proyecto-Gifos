@@ -1,0 +1,330 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+   
+body {
+     font-family: $fonts;
+}
+
+.create-Gifs, 
+.video-Recording{
+     margin: 40px auto;
+     width: 60%;
+     background: #e6e6e6;
+     box-shadow: $boxDay2;
+     font-size: 0.8rem;
+}
+
+.tittle-Create-Gif{
+     color: white;
+     font-weight: bolder;
+     margin: 3px;
+     padding: 1px 4px;
+}
+
+.window-Create-Gif{
+     padding: 15px;
+     display: flex;
+}
+
+.window-Create-Gif * {
+     padding: 0 5px;
+}
+
+.text-Create-Gif{
+     margin-top: 20px;
+}
+
+.btns-Create-Gifs{
+     display: flex;
+     margin-top: 10px;
+     padding: 10px;
+     float: right;
+}
+
+.btns-Create-Gifs * {
+     margin: 0 4px;
+}
+
+.btn-Create-Gif{
+     width: 144px;
+     height: 36px;
+     font-family: $fonts;
+     font-size: 1rem;
+     padding: 4px;
+     cursor: pointer;
+}
+
+.aline{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-left: 82%;
+     span{
+          padding: 0.20rem 1.0rem;
+
+     }
+
+     img{
+          position: relative;
+          border-right: 1px solid black;
+          align-self: stretch;
+          margin-top: -4px;
+          margin-bottom: -4px;
+          margin-left: -4px;
+          background-repeat: no-repeat;
+          background-position: center;
+          padding: 0 1.3rem;
+     }
+}
+
+
+.video-Recording{
+     display: none;
+     margin: 30px auto;
+}
+
+.tittle-Create-Gif .btn-Close{
+     float: right;
+     margin-top: 1px;
+}
+
+.container-Video{
+     padding: 2px 10px;
+}
+
+#video{
+     padding: 1px;
+     width: 100%;
+     height: 300px;
+     object-fit: fill;
+     background-color: #666;
+     border: 1px solid #979797;
+     box-shadow:$boxNigth3
+}
+   
+.container-Gif-Preview{
+     display: none;
+     img{
+          width: 100%;
+          height: 50vh;
+     }
+}
+
+.btn-Capture{
+     margin: 0 5px 5px 0;
+     padding: 5px 5px;
+     align-items: center;
+}
+
+.btn-Camera{
+     /* display: flex; */
+     /* flex-direction: end; */
+     /* float: left; */
+     margin-left: 78%;
+}
+
+.btn-Capture ,
+.btn-Camera span {
+     padding: 3px;
+     vertical-align: middle;
+}
+
+.stop {
+     display: none;
+     color: white;
+     background: #ff6161;
+     border: 1px solid #110038;
+     box-shadow: $box2;
+     margin-bottom: 12px;
+     cursor: pointer;
+}
+
+.btns-Upload-Gifs{
+     display: none;
+}
+
+#timer {
+     height: 36px;
+	width: 124px;
+     display: none;
+     align-self: center;
+     background-color: white;
+     border: 1px solid #979797;
+     box-shadow: $boxNigth3;
+     padding: 15px;
+     float: left;
+     margin-left: 6px;
+     
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.activetimer{
+     margin-top: 10px;
+     position: absolute;
+     transform: translate(0, -160%);
+}
+
+.repeat{
+     background: #fff4fd;
+     border: 1px solid #110038;
+     box-shadow: $boxDay1;
+     margin-right: 10px;     
+}
+
+.upload{
+     background: #f7c9f3;
+     border: 1px solid #110038;
+     box-shadow: $boxDay1;
+
+}
+
+.push {
+     margin-left: auto;
+}
+
+.uploading-gif{
+     background: #ffffff;
+     border: 1px solid #979797;
+     box-shadow: $boxNigth3;
+     text-align: center;
+     height: 300px;
+     
+     img{
+          margin-top: 80px;
+          width: 30px;
+          height: auto;
+     }       
+}
+
+.uploading-gif-title {
+     font-family: $fonts;
+     font-size: 0.9rem;
+     font-weight: bolder;
+     color: #110038;
+     letter-spacing: 0;
+     text-align: center;
+     line-height: 22px;
+}
+
+.uploading-gif,
+.load {
+     margin: 0 auto;
+     /* width: 40%; */
+     margin-top: 25px;
+}
+
+.uploading-gif,
+.time-left {
+     color: rgba(17, 0, 56, 0.64);
+     font-size: 0.7rem;
+}
+
+.content-modal{
+     display:flex;
+}
+
+.gif-Create {
+     background: #ffffff;
+     border: 1px solid #979797;
+     box-shadow: $boxNigth3;
+     width: 70%;
+     height: 40%;
+     margin: 8px;
+     padding: 2px;
+}
+
+.copy{
+     white-space: normal;
+     margin-top: 10px;
+     width: 100%;
+     height: 100%;
+}
+
+.btns-gif-create{
+     display: flex;
+     flex-direction: column;
+     margin-top: 5%;
+     margin-left: 5%;
+     align-items: justify;
+
+     p{
+          font-family: $fonts;
+          font-weight: bold;
+     }
+}
+
+.btn-listo{
+     margin-top: 90%;
+}    
+
+.style-Section {
+     display: flex;
+     align-items: center;
+     width: 85%;
+     height: 32px;
+     margin-top: 3%;
+     margin-left: 5%;
+     font-family: $fonts;
+
+     p {
+          font-family: $fonts;
+          margin-left: 1%;
+          text-align: left;
+          font-size: 14px;
+          letter-spacing: 0;
+          color: #110038;     
+     }
+}
+
+.container-My-Gifos{
+     margin-top: 2%;
+     width: 85%;
+     margin-left: 5%;
+}
+
+#my-Gifos{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-template-rows: repeat(auto, 320px);
+     grid-column-gap: 10px;
+     grid-row-gap: 10px;
+
+     img{
+          background-color: rgba(128, 128, 128, 0.082);
+          background-image: url(https://win98icons.alexmeub.com/icons/png/application_hourglass-0.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 100%;
+          height: 300px;
+     }
+}   
+
+.progress-bar {
+     margin: 0 auto;
+     height: 30px;
+     width: 250px;
+     position: relative;
+     overflow: hidden;
+     display: none;
+}
+   
+.progress-bar ul {
+     padding: 4px;
+     position: absolute;
+}
+   
+.progress-bar ul li {
+     list-style-type: none;
+     height: 20px;
+     width: 12px;
+     background-color: #f7c9f3;
+     border: 1px solid #110038;
+     display: none;
+     box-shadow: $boxDay1;
+}
+   
