@@ -1,118 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="description" content="Página Web Desarrollada como segundo proyecto en 
-     la carrera de DESARROLLADOR WEB FULL STACK - ACAMICA">
-     <meta name="keywords" content="full stack ,developer web, desarrollo web,Acamica">
-     <meta name="autor" content="Andres Benavides - Dandavi2310@hotmail.com">
-     <meta name="copyright" content="Andres Benavides">
-     <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" 
-     rel="stylesheet">
-     <script src=" https://kit.fontawesome.com/fa5c27ec11.js"></script>
-     <link rel="stylesheet" type="text/css" href="./styles/index.css">
-     <title>Crear Gifos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página Web Desarrollada como segundo proyecto en 
+    la carrera de DESARROLLADOR WEB FULL STACK - ACAMICA">
+    <meta name="keywords" content="full stack ,developer web, desarrollo web,Acamica">
+    <meta name="autor" content="Andres Benavides - Dandavi2310@hotmail.com">
+    <meta name="copyright" content="Andres Benavides">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" 
+    rel="stylesheet">
+    <script src=" https://kit.fontawesome.com/fa5c27ec11.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
+    <title>Crear Gifos</title>
 </head>
 
 <body class="Body-SailorDay" id="theme">
-     <header>
-          <div class="text-header">
-               <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número 
-               de visitas: 12.765.803</p>
-          </div>
-     </header>
+    <header>
+        <div class="text-header">
+            <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número 
+            de visitas: 12.765.803</p>
+        </div>
+    </header>
 
-     <div class="container-Hero">
-          <nav class="hero">
-               <img class = "logo-Arrow" src="../../img/arrow.svg" 
-               alt="logo arrow" onclick="backIndexP()">
-               <img src="../../img/gifOF_logo.png" alt="logo" 
-               class="logo" id="logo">
-          </nav>  
-     </div>
+    <div class="container-Hero">
+        <nav class="hero">
+            <img class = "logo-Arrow" src="../../img/arrow.svg" 
+            alt="logo arrow" onclick="backIndexP()">
+            <img src="../../img/gifOF_logo.png" alt="logo" 
+            class="logo" id="logo">
+        </nav>  
+    </div>
 
-     <div class="create-Gifs">
-          <p class="tittle-Create-Gif">Crear Guifos</p>
-          <div class="window-Create-Gif">
-               <div class="img-Window"><img src="../../img/windowimg.png" alt="image window"></div>
+    <div class="create-Gifs">
+        <p class="tittle-Create-Gif">Crear Guifos</p>
+        <div class="window-Create-Gif">
+            <div class="img-Window"><img src="../../img/windowimg.png" alt="image window"></div>
 
-               <div>
-                    <p class="text-Window"><strong>Aquí podrás crear tus propios guifos</strong></p>
-                    <div class="text-Create-Gif">
-                        <p>Crear tu <strong>guifo</strong> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:</p>
-                        <br>
+            <div>
+                <p class="text-Window"><strong>Aquí podrás crear tus propios guifos</strong></p>
+                <div class="text-Create-Gif">
+                    <p>Crear tu <strong>guifo</strong> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos personalizados. Los pasos para crear tu guifo son:</p>
+                    <br>  
+                    <p><b>1)</b>Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</p>
+                    <br>
+					<p><b>2)</b>Capturar tu momento guifo</p>
+                    <br>
+                    <p><b>3)</b>Revisar el momento</p>
+                    <br>
+                    <p><b>4)</b>Listo para subir y compartir!</p>
+                    <br>
+                    <p> ¿Quieres comenzar a crear tu<b>guifo</b>ahora?</p>
                         
-                            <p><b>1)</b>Dar permisos de acceso a la cámara (sólo por el tiempo de uso)</p>
-                            <br>
-                            <p><b>2)</b>Capturar tu momento guifo</p>
-                            <br>
-                            <p><b>3)</b>Revisar el momento</p>
-                            <br>
-                            <p><b>4)</b>Listo para subir y compartir!</p>
-                            <br>
-                            <p> ¿Quieres comenzar a crear tu<b>guifo</b>ahora?</p>
-                        
+                    <div class="btns-Create-Gifs">
+                        <button class="btn-Create-Gif cancel"  onclick="cancelCreateGifos()"><span>Cancelar</span></button>
+                        <button class="btn-Create-Gif confirm" onclick = "initStream()"><span>Comenzar</span></button>
+                    </div>  
+                </div>
+            </div>     
+        </div>
+    </div>
 
-                         <div class="btns-Create-Gifs">
-                            <button class="btn-Create-Gif cancel"  onclick="cancelCreateGifos()"><span>Cancelar</span></button>
-                            <button class="btn-Create-Gif confirm" onclick = "initStream()"><span>Comenzar</span></button>
-                         </div>  
-                    </div>
-               </div>     
-          </div>
-     </div>
-
-     <div class="video-Recording">
-          <p class="tittle-Create-Gif">
-               <span id="title-create">Un chequeo antes de empezar</span>
+    <div class="video-Recording">
+         <p class="tittle-Create-Gif">
+            <span id="title-create">Un chequeo antes de empezar</span>
                <a href="../../index.html">
-                    <img src="../../img/close.svg" alt="icono cerrar" 
-                    class="btn-Close">
-               </a>   
-          </p>
+                <img src="../../img/close.svg" alt="icono cerrar" 
+                class="btn-Close">
+            </a>   
+        </p>
 
-          <div class="container-Video">
-               <video id="video" autoplay playsinline></video>
-               <div class="container-Gif-Preview"></div>
-          </div>
-               
-          <div class="btn-Capture">
-               
-               <button class="btn-Create-Gif confirm aline" id="startRecording" onclick = "startRecording()">
-                    <img class= "btn-Camera" src= "../../img/camera.svg" alt="imagen camara"><span> Capturar</span>
-               </button>
+        <div class="container-Video">
+            <video id="video" autoplay playsinline></video>
+            <div class="container-Gif-Preview"></div>
+        </div>
+		
+        <div class="btn-Capture">   
+            <button class="btn-Create-Gif confirm aline" id="startRecording" onclick = "startRecording()">
+                <img class= "btn-Camera" src= "../../img/camera.svg" alt="imagen camara"><span> Capturar</span>
+            </button>
 
-               <button class="btn-Create-Gif stop aline"         onclick="stopRecording()" id="stopRecording">
-                    <img class= "btn-Camera" src="../../img/recording.svg" alt="imagen listo"><span>Listo  </span>
-               </button>
+            <button class="btn-Create-Gif stop aline"         onclick="stopRecording()" id="stopRecording">
+                <img class= "btn-Camera" src="../../img/recording.svg" alt="imagen listo"><span>Listo  </span>
+            </button>
 
             <div class="btns-Upload-Gifs">
-			<div id="timer">
-                    <p class="stopwatch" id="stopwatch"></p>
-               </div>
-                    
+				<div id="timer">
+					<p class="stopwatch" id="stopwatch"></p>
+				</div>
+				
                 <button class="btn-Create-Gif repeat push cancel" onclick="location.href='createGuifos.html'">
                 <span>Repetir Captura</span></button>
 
                 <button class="btn-Create-Gif upload confirm" 
                 id="upload"><span>Subir Guifo</span></button> 
             </div> 
-          </div>
-     </div>  
+        </div>
+    </div>  
 
-     <div class="tittle-My-Gifos style-Section">
-         <p>Mis Guifos: </p> 
-     </div>
+    <div class="tittle-My-Gifos style-Section">
+        <p>Mis Guifos: </p> 
+    </div>
 
-     <div class="container-My-Gifos">
-          <div id="my-Gifos"></div>
-     </div>
+    <div class="container-My-Gifos">
+        <div id="my-Gifos"></div>
+    </div>
 
-     <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
-     <script src="./scripts/clock.js"></script>
-     <script src="../../scripts/variables.js"></script> 
-     <script src="./scripts/listGifosLs.js"></script> 
-     <script src="./scripts/createGuifos.js"></script>  
+    <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+    <script src="./scripts/clock.js"></script>
+    <script src="../../scripts/variables.js"></script> 
+    <script src="./scripts/listGifosLs.js"></script> 
+    <script src="./scripts/createGuifos.js"></script>  
 </body>
 </html>
