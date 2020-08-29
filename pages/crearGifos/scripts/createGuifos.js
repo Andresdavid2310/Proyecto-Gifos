@@ -40,6 +40,12 @@ async function stopRecording() {
      await gifRecorder.reset();
      await gifRecorder.destroy();
 
+     let containerGif = document.querySelector('.container-Gif-Preview');
+     let imgPreview = document.createElement('img');
+     imgPreview.setAttribute('id', 'gif-Preview');
+     imgPreview.setAttribute('alt', 'vista prelimar GIF');
+     containerGif.appendChild(imgPreview);
+
      preview = document.getElementById("gif-Preview");
 
      gifSrc = await gifBlob;
@@ -187,8 +193,6 @@ let postApiGiphos = (gif) =>{
                  JSON.stringify(data.data)
                );
 
-
-
                confirmloadGif(data);
           });
      });
@@ -250,4 +254,8 @@ async function downloadGifNew() {
      document.body.appendChild(saveImg);
      saveImg.click();
      document.body.removeChild(saveImg);
+}
+
+cancelCreateGifos = ()=>{
+     window.location.href = "../../index.html"
 }

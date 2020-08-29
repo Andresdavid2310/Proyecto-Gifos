@@ -1,110 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="description" content="Página Web Desarrollada como segundo proyecto en la carrera de DESARROLLADOR WEB FULL STACK - ACAMICA">
-     <meta name="keywords" content="full stack ,developer web, desarrollo web,Acamica">
-     <meta name="autor" content="Andres Benavides - Dandavi2310@hotmail.com">
-     <meta name="copyright" content="Andres Benavides">
-     <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
-     <script src=" https://kit.fontawesome.com/fa5c27ec11.js"></script>
-     <link rel="stylesheet" type="text/css" href="./styles/index.css">
-     <title>GifOs</title
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página Web Desarrollada como segundo proyecto en la carrera de DESARROLLADOR WEB FULL STACK - ACAMICA">
+    <meta name="keywords" content="full stack ,developer web, desarrollo web,Acamica">
+    <meta name="autor" content="Andres Benavides - Dandavi2310@hotmail.com">
+    <meta name="copyright" content="Andres Benavides">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <script src=" https://kit.fontawesome.com/fa5c27ec11.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
+    <title>GifOs</title>
 </head>
 
 <body class="Body-SailorDay" id="theme">
-     <header>
-          <div class="text-header">
-               <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
-          </div>
-     </header>
+    <header>
+        <div class="text-header">
+            <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</p>
+        </div>
+    </header>
 
-     <main class="container-Gifs">
-          <nav class="hero-gif">
-               <img src="./img/gifOF_logo.png" alt="logo" class="logo" id="logo" onclick="reloadIndex()">
+    <main class="container-Gifs">
+        <nav class="hero-gif">
+            <img src="./img/gifOF_logo.png" alt="logo" class="logo" id="logo" onclick="reloadIndex()">
 
-               <div class="container-Buttons">
+            <div class="container-Buttons">
 
-                    <button class="create-Gifos btn" id="create-Gifos" onclick="createGifos()">
-                         Crear GifOs
-                    </button>
+                <button class="create-Gifos btn" id="create-Gifos" onclick="createGifos()">
+                    Crear GifOs
+                </button>
 
-                    <button class="btn select-Theme" onclick="openMenu()" onblur="closeMenu()" >
-                         Elegir Tema
-                    </button>
+                <button class="btn select-Theme" onclick="openMenu()" onblur="closeMenu()" >
+                    Elegir Tema
+                </button>
 
-                    <ul class="menu" id="menu">
-                         <li>
-                              <button class="sailor-Day btnlist" onclick="changeTheme('SailorDay')">
-                                   <u>S</u>ailor Day
-                              </button>
-                         </li>
-                         <li>
-                              <button class="sailor-Night btnlist" onclick="changeTheme('SailorNight')">
-                                   <u>S</u>ailor Night
-                              </button>
-                         </li>
-                    </ul>
+                <ul class="menu" id="menu">
+                    <li>
+                        <button class="sailor-Day btnlist" onclick="changeTheme('SailorDay')">
+                            <u>S</u>ailor Day
+                        </button>
+                    </li>
+                    <li>
+                        <button class="sailor-Night btnlist" onclick="changeTheme('SailorNight')">
+                            <u>S</u>ailor Night
+                        </button>
+                    </li>
+                </ul>
                      
-                    <button class="btn button-Menu" onclick="openMenu()" onblur="closeMenu()">
-                         <i class="fas fa-caret-down"></i>
-                    </button>
+                <button class="btn button-Menu" onclick="openMenu()" onblur="closeMenu()">
+                    <i class="fas fa-caret-down"></i>
+                </button>
 
-                    <div class="my-Gifos">
-                         <a href="./pages/myGuifos/myGuifos.html" class="My-Gifos">
-                              <u>M</u>is GiFos
-                         </a>
-                    </div>
-               </div>   
-          </nav>  
-          
-          <div class="section-Search">
-               <div class="container-Search">
-                    <div class="bar-Search">
-                         <p>Buscar</p>
-                    </div>
+                <div class="my-Gifos">
+                    <a href="./pages/myGuifos/myGuifos.html" class="My-Gifos">
+                        <u>M</u>is GiFos
+                    </a>
+                </div>
+            </div>   
+		</nav>  
+		
+        <div class="section-Search">
+            <div class="container-Search">
+                <div class="bar-Search">
+                        <p>Buscar</p>
+                </div>
 
-                    <div class="container-Input">
-                         <input type="text" name="search" id="input-Search" class="input-Search" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
-                         <button class="btn-Search" id="btn-Search" onclick="searchText(document.getElementById('input-Search').value)">
-                              <i class="fa fa-search" aria-hidden="true"></i>
-                              Buscar
-                         </button>
-                    </div>
-               </div>
+                <div class="container-Input">
+                    <input type="text" name="search" id="input-Search" class="input-Search" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…">
+                        <button class="btn-Search" id="btn-Search" onclick="searchText(document.getElementById('input-Search').value)">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                            Buscar
+                        </button>
+                </div>
+            </div>
 
-               <div class="suggestion-Search">
+            <div class="suggestion-Search">
 
-                    <button class="suggestion-Btn" id="suggestion-Btn1" onclick="searchText(this.innerHTML)"># Resultado de búsqueda sugerido</button>
+                <button class="suggestion-Btn" id="suggestion-Btn1" onclick="searchText(this.innerHTML)"># Resultado de búsqueda sugerido</button>
 
-                    <button class="suggestion-Btn" id="suggestion-Btn2" 
-                    onclick="searchText(this.innerHTML)"># Un resultado similar de búsqueda</button>
+                <button class="suggestion-Btn" id="suggestion-Btn2" 
+                onclick="searchText(this.innerHTML)"># Un resultado similar de búsqueda</button>
 
-                    <button class="suggestion-Btn" id="suggestion-Bt3"  onclick="searchText(this.innerHTML)"># Y otro más</button>
+                <button class="suggestion-Btn" id="suggestion-Bt3"  onclick="searchText(this.innerHTML)"># Y otro más</button>
 
-               </div>
-          </div>
+            </div>
+        </div>
 
 
-          <div class="section-Suggestions style-Section">
-               <p>Hoy te sugerimos:</p>
-          </div>
+        <div class="section-Suggestions style-Section">
+            <p>Hoy te sugerimos:</p>
+        </div>
 
-          <div class= "container-Trends">
-
-          </div>
+		<div class= "container-Trends"></div>
      
 
-          <div class="section-Trends style-Section" id = "section-Trends">
-               <p>Tendencias</p>   
-          </div>
+        <div class="section-Trends style-Section" id = "section-Trends">
+            <p>Tendencias</p>   
+        </div>
 
-     </main>
-     <script src="./scripts/variables.js"></script>
-     <script src="./scripts/util.js"></script>
-     <script src="./scripts/search.js"></script>
-     <script src="./scripts/index.js"></script>
-     <script src="./scripts/events.js"></script>
+    </main>
+    <script src="./scripts/variables.js"></script>
+    <script src="./scripts/util.js"></script>
+    <script src="./scripts/search.js"></script>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/events.js"></script>
 </body>
 </html>

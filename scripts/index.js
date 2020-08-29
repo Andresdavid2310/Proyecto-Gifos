@@ -4,25 +4,26 @@ HASTAG.forEach(async (suggest, index)=>{
      let cardSuggestions = document.querySelectorAll('.card-Suggestion .gif-Suggestion');
      let textSuggestion = document.querySelectorAll('.card-Suggestion .tittle-Suggestion p');
      
+     
      let category = 'search';
      let urlResponse = (`${ENDPOINT}${category}?${APY_KEY}&q=${suggest}, { method: 'GET' }`); 
      let dates = await loadUrl(urlResponse);
+
      let GifRandom = dates.data.sort(()=> Math.random()-0.6);
-     cardSuggestions[index].setAttribute('src', `${GifRandom[numImg].images.downsized_medium.url}`);
+     let aleatorio = Math.floor(Math.random()*(GifRandom.length));
+     cardSuggestions[index].setAttribute('src', `${GifRandom[aleatorio].images.original.url}`);
      textSuggestion[index].innerHTML = `#${HASTAG[index]}`;
 })
 
 //-----Function load trending-----//
 let loadTrends = async(urlTrending, cardTrends) => {
 
-     console.log(urlTrending);
-     console.log(cardTrends);
      let dates = await loadUrl(urlTrending);
-     console.log(dates.data);
-     let GifRandom = dates.data.sort(()=> Math.random()-0.6);
+     let GifRandom = dates.data.sort(()=> Math.random()-0.5);
+     
      
      for(let i = 0; i<cardTrends.length; i++){
-          cardTrends[i].setAttribute('src', `${GifRandom[i].images.fixed_width.webp}`);
+          cardTrends[i].setAttribute('src', `${GifRandom[i].images.original.url}`);
           cardTrends[i].setAttribute('id', `ImgSearch_${i}`);
           cardTrends[i].nextElementSibling.innerHTML = `<p># ${GifRandom[i].title}</p>`;
      }
@@ -85,8 +86,8 @@ let changeSuggestion = async (element, id) =>{
      
      let cardChange = clon.querySelector('.gif-Suggestion');
      let gifImg = await searchImgCategories();
-     let numImg = Math.floor(Math.random()*(gifImg.length));
-     cardChange.setAttribute('src', `${gifImg[numImg].images.downsized_medium.url}`); 
+     /* let numImg = Math.floor(Math.random()*(gifImg.length)); */
+     cardChange.setAttribute('src', `${gifImg[aleatorio].images.original.url}`); 
      document.querySelector('.suggestions').appendChild(clon);
 }
 

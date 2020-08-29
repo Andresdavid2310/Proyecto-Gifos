@@ -1,74 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="description" content="Página Web Desarrollada como segundo proyecto en la carrera de DESARROLLADOR WEB FULL STACK - ACAMICA">
-     <meta name="keywords" content="full stack ,developer web, desarrollo web,Acamica">
-     <meta name="autor" content="Andres Benavides - Dandavi2310@hotmail.com">
-     <meta name="copyright" content="Andres Benavides">
-     <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
-     <script src=" https://kit.fontawesome.com/fa5c27ec11.js"></script>
-     <link rel="stylesheet" type="text/css" href="./styles/index.css">
-     <title>My GifOs</title
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página Web Desarrollada como segundo proyecto en la carrera de DESARROLLADOR WEB FULL STACK - ACAMICA">
+    <meta name="keywords" content="full stack ,developer web, desarrollo web,Acamica">
+    <meta name="autor" content="Andres Benavides - Dandavi2310@hotmail.com">
+    <meta name="copyright" content="Andres Benavides">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fa5c27ec11.js"></script>
+    <link rel="stylesheet" type="text/css" href="./styles/index.css">
+    <title>My GifOs</title>
 </head>
 
 <body class="Body-SailorDay" id="theme">
-     <header>
-          <div class="text-header">
-               <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifsestán.////// Número de visitas: 12.765.803</p>
-          </div>
-     </header>
+    <header>
+        <div class="text-header">
+            <p>¡Bienvenidos/as a Guifos.com! ——————Donde los gifsestán.////// Número de visitas: 12.765.803</p>
+        </div>
+    </header>
 
-     <main class="container-Gifs">
-          <nav class="hero-gif">
-               <img src="../../img/gifOF_logo.png" alt="logo" class="logo" id="logo" onclick="reloadIndex()">
+    <main class="container-Gifs">
+        <nav class="hero-gif">
+            <img src="../../img/gifOF_logo.png" alt="logo" class="logo" id="logo" onclick="reloadIndex()">
 
-               <div class="container-Buttons">
+            <div class="container-Buttons">
 
-                    <button class="create-Gifos btn" id="create-Gifos" onclick="createGifos()">
-                         Crear GifOs
-                    </button>
+                <button class="create-Gifos btn" id="create-Gifos" onclick="createGifos()">
+                    Crear GifOs
+                </button>
 
-                    <button class="btn select-Theme" onclick="openMenu()" onblur="closeMenu()" >
-                         Elegir Tema
-                    </button>
+                <button class="btn select-Theme" onclick="openMenu()" onblur="closeMenu()" >
+                    Elegir Tema
+                </button>
 
-                    <ul class="menu" id="menu">
-                         <li>
-                              <button class="sailor-Day btnlist" onclick="changeTheme('SailorDay')">
-                                   <u>S</u>ailor Day
-                              </button>
-                         </li>
-                         <li>
-                              <button class="sailor-Night btnlist" onclick="changeTheme('SailorNight')">
-                                   <u>S</u>ailor Night
-                              </button>
-                         </li>
-                    </ul>
-                     
-                    <button class="btn button-Menu" onclick="openMenu()" onblur="closeMenu()">
-                         <i class="fas fa-caret-down"></i>
-                    </button>
+                <ul class="menu" id="menu">
+                    <li>
+                        <button class="sailor-Day btnlist" onclick="changeTheme('SailorDay')">
+                            <u>S</u>ailor Day
+                        </button>
+                    </li>
+                    <li>
+                        <button class="sailor-Night btnlist" onclick="changeTheme('SailorNight')">
+                            <u>S</u>ailor Night
+                        </button>
+                    </li>
+                </ul>
+               
+                <button class="btn button-Menu" onclick="openMenu()" onblur="closeMenu()">
+                    <i class="fas fa-caret-down"></i>
+                </button>
 
-                    <div class="my-Gifos">
-                         <a href="myguifos.html" class="My-Gifos">
-                              <u>M</u>is GiFos
-                         </a>
-                    </div>
-               </div>   
-          </nav>  
+                <div class="my-Gifos">
+                    <a href="myguifos.html" class="My-Gifos">
+                        <u>M</u>is GiFos
+                    </a>
+                </div>
+            </div>   
+        </nav>  
 
-          <div class="tittle-My-Gifos style-Section">
-               <p>Mis Guifos: </p> 
-           </div>
+        <div class="tittle-My-Gifos style-Section">
+            <p>Mis Guifos: </p> 
+        </div>
 
-           <div class="container-My-Gifos">
-                <div id="my-Gifos"></div>
-           </div>
+        <div class="container-My-Gifos">
+            <div id="my-Gifos"></div>
+        </div>
 
-     </main>
-     <script src="../../scripts/variables.js"></script>
-     <script src="../myGuifos/script/index.js"></script>
-     <script src="../crearGifos/scripts/listGifosLs.js"></script>
+	</main>
+
+    <script src="../../scripts/variables.js"></script>
+    <script src="../myGuifos/script/index.js"></script>
+    <script src="../crearGifos/scripts/listGifosLs.js"></script>
 </body>
+</html>
