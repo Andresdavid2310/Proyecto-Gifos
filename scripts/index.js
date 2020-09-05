@@ -86,7 +86,6 @@ let changeSuggestion = async (element, id) =>{
      
      let cardChange = clon.querySelector('.gif-Suggestion');
      let gifImg = await searchImgCategories();
-     /* let numImg = Math.floor(Math.random()*(gifImg.length)); */
      cardChange.setAttribute('src', `${gifImg[aleatorio].images.original.url}`); 
      document.querySelector('.suggestions').appendChild(clon);
 }
